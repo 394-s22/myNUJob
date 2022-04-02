@@ -2,8 +2,12 @@
   text-align: center;
 }
 
+.card-body {
+  color: #adadad;
+}
 
-
-
-
-
+.card-title {
+  font-weight: bold;
+  padding: 10px;
+  color: #684c96;
+}
