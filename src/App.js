@@ -1,5 +1,6 @@
 import './App.css';
 import JobList from './components/JobList.js';
+import { useData } from './utilities/firebase.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const job_list = [
