@@ -2,10 +2,19 @@
   text-align: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.cards {
+  width: 80%;
+}
+
 .card {
-  margin: 10px;
   background-color: #828282;
 }
+
 .card-text {
   color: #828282;
 }
@@ -15,4 +24,9 @@
   padding-top: 10px;
   padding-left: 10px;
   color: #684c96;
+}
+
+
+.filters {
+  width: 20%;
 }
