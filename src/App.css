@@ -2,12 +2,17 @@
   text-align: center;
 }
 
-.card-title {
-  color: #adadad;
+.card {
+  margin: 10px;
+  background-color: #828282;
+}
+.card-text {
+  color: #828282;
 }
 
 .card-title {
   font-weight: bold;
-  padding: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
   color: #684c96;
 }
