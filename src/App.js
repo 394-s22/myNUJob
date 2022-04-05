@@ -129,7 +129,7 @@ const App = () => {
 	return (
 		<div className="container">
 			<FilterMenu filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
-			<JobList jobs={Object.entries(jobList)} filterCategories={filterCategories} />
+			<JobList jobs={Object.values(jobList)} filterCategories={filterCategories} />
 		</div>
 	);
 }
