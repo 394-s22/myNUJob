@@ -7,14 +7,21 @@ const openLink = (url) => {
 
 const Job = ({ job }) => {
     return (
-        <div className='container-fluid' onClick={() => openLink(job.link)}>
+        <div className='container-fluid' >
             <div className="card">
-                <div className="card-title"> {job.title} </div>
+                <div className="card-title"> {job.title} 
+                    <button className='apply-button'
+                        onClick={() => openLink(job.link)}>
+                        Apply
+                    </button>
+                </div>
+
                 <div className="card-body">
                     <div className="row">
                         <div className='card-text col-sm'> {job.pay} </div>
                         <div className='card-text col-sm'> {job.term} </div>
                         <div className='card-text col-sm'> {job.location} </div>
+                        
                     </div>
                 </div>
             </div>

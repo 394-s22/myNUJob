@@ -2,6 +2,8 @@ import './App.css';
 import React, { useState } from 'react';
 import JobList from './components/JobList.js';
 import FilterMenu from './components/FilterMenu.js';
+import Nav from './components/Nav.js';
+
 import { useData } from './utilities/firebase.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -127,10 +129,14 @@ const App = () => {
 	console.log(Object.entries(jobList))
 
 	return (
-		<div className="container">
-			<FilterMenu filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
-			<JobList jobs={Object.values(jobList)} filterCategories={filterCategories} />
+		<div>
+			<Nav />
+			<div className="container">
+				<FilterMenu filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
+				<JobList jobs={Object.values(jobList)} filterCategories={filterCategories} />
+			</div>
 		</div>
+
 	);
 }
 

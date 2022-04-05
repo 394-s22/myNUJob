@@ -7,7 +7,7 @@ const FilterMenu = ({filterCategories, setFilterCategories}) => {
 
   return (
     <div className='filters'>
-      <h2>Search</h2>
+      <h2>Filter</h2>
       <h4>Category</h4>
       <div>
         <input class="form-check-input" type="checkbox" value="Research" id="flexCheckDefault"
