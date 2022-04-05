@@ -6,8 +6,8 @@ const FilterMenu = ({filterCategories, setFilterCategories}) => {
     lst.includes(x) ? lst.filter(y => y !== x) : [x, ...lst];
 
   return (
-    <div className='filters'>
-      <h2>Filter</h2>
+    <div className='filter-menu'>
+      <h2>Filter by</h2>
       <h4>Category</h4>
       <div>
         <input class="form-check-input" type="checkbox" value="Research" id="flexCheckDefault"
