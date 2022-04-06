@@ -5,6 +5,7 @@
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .cards {
@@ -47,4 +48,8 @@ nav{
   padding-left: 1em;
   font-weight: bold;
   font-size: 20px;
+}
+
+.filter-menu {
+  padding-top: 15px;
 }
