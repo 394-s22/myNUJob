@@ -40,15 +40,35 @@
   width: 20%;
 }
 
-nav{
+/* nav{
   border-bottom: 1px solid black;
+} */
+
+.nav {
+  display: flex;
+  justify-content: center;
 }
 
-.navbar-brand {
-  padding-left: 1em;
+.nav-title{
+  transition: color 0.5s ease-in;
+  color: #4F4851;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 3em;
 }
+
+.nav-title > span.nav-title-nu{
+  transition: inherit;
+}
+
+.nav-title:hover{
+  color:black;
+}
+
+
+.nav-title:hover > span.nav-title-nu {
+  color:#684c96;
+}
+
 
 .filter-menu {
   padding-top: 15px;

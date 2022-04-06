@@ -1,11 +1,11 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Nav = () => {
     return (
-        <div>
-            <nav class="navbar navbar-light bg-light">
-                <p class="navbar-brand text-center">myNUJob</p>
-            </nav>
+        <div className="nav">
+            <div className="nav-title">
+                my<span className="nav-title-nu">NU</span>Job
+            </div>
         </div>
     )
 }
