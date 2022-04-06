@@ -18,7 +18,7 @@ const Job = ({ job }) => {
 
                 <div className="card-body">
                     <div className="row">
-                        <div className='card-text col-sm'> {job.pay} </div>
+                        <div className='card-text col-sm'> {job.pay}/hr </div>
                         <div className='card-text col-sm'> {job.term} </div>
                         <div className='card-text col-sm'> {job.location} </div>
                         
