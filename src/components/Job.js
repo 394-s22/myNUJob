@@ -15,6 +15,9 @@ const Job = ({ job }) => {
                         <b>Apply</b>
                     </button>
                 </div>
+                <div className="card-category">
+                    {job.category}
+                </div>
 
                 <div className="card-body">
                     <div className="row">

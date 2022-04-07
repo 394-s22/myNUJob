@@ -33,6 +33,11 @@
   justify-content: space-between;
 }
 
+.card-category{
+  padding-left: 10px;
+  color: #684c96;
+}
+
 .apply-button{
   margin-right: 10px;
   background-color: #795fad; 
