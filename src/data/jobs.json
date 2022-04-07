@@ -1,102 +1,191 @@
 {
     "Medill: Research Aide 2": {
-        "title": "Medill: Research Aide 2",
+        "title": "Research Aide 2",
         "id": 1,
-        "pay": "$13",
+        "pay": 13,
         "term": "Spring 2022",
         "location": "Evanston Campus",
         "description": "text",
         "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-research-aide-21.html",
-        "category": "Research"
+        "category": "Research",
+        "department": "Medill"
     },
     "FUSE STEAM Education Program-SESP: Research Aide": {
-        "title": "FUSE STEAM Education Program-SESP: Research Aide",
+        "title": "Research Aide",
         "id": 2,
-        "pay": "$13.50",
+        "pay": 13.50,
         "term": "Spring 2022",
         "location": "Evanston Campus",
         "description": "text",
         "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/fuse-steam-education-program-sesp-research-aide.html",
-        "category": "Research"
+        "category": "Research",
+        "department": "FUSE STEAM Education Program-SESP"
     },
     "Learning Sciences: Research Aide": {
-        "title": "Learning Sciences: Research Aide",
+        "title": "Research Aide",
         "id": 3,
-        "pay": "$13.50",
+        "pay": 13.50,
         "term": "Spring 2022",
         "location": "Remote",
         "description": "text",
         "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/learning-sciences-research-aide-21.html",
-        "category": "Research"
+        "category": "Research",
+        "department": "Learning Sciences"
     },
     "Medill: Multimedia Production Aide": {
-        "title": "Medill: Multimedia Production Aide",
+        "title": "Multimedia Production Aide",
         "id": 4,
-        "pay": "$13",
+        "pay": 13,
         "term": "Spring 2022",
         "location": "Evanston Campus",
         "description": "text",
         "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-multimedia-production-aide.html",
-        "category": "Research"
+        "category": "Research",
+        "department": "Medill"
     },
     "Women's Basketball: Team Manager": {
-        "title": "Women's Basketball: Team Manager",
+        "title": "Team Manager",
         "id": 5,
-        "pay": "$13",
+        "pay": 13,
         "term": "Spring 2022",
         "location": "Evanston Campus",
         "description": "text",
         "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation---womens-basketball-team-manager1.html",
-        "category": "Athletics and Recreation"
+        "category": "Athletics and Recreation",
+        "department": "Women's Basketball"
     },
-    "Football Video Assistant": {
+    "Athletics and Recreation: Football Video Assistant": {
         "title": "Football Video Assistant",
         "id": 6,
-        "pay": "$14",
+        "pay": 14,
         "term": "Spring 2022",
         "location": "Evanston Campus",
         "description": "text",
         "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-football-video-assistant.html",
-        "category": "Athletics and Recreation"
+        "category": "Athletics and Recreation",
+        "department": "Athletics and Recreation"
     },
-    "Lifeguard": {
+    "Athletics and Recreation: Lifeguard": {
         "title": "Lifeguard",
         "id": 7,
-        "pay": "$13.25",
+        "pay": 13.25,
         "term": "Spring 2022",
         "location": "Evanston Campus",
         "description": "text",
         "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-lifeguard.html",
-        "category": "Athletics and Recreation"
+        "category": "Athletics and Recreation",
+        "department": "Athletics and Recreation: "
     },
-    "Student Equipment Manager": {
+    "Athletics and Recreation: Student-Equipment Manager": {
         "title": "Student Equipment Manager",
         "id": 8,
-        "pay": "$13",
+        "pay": 13,
         "term": "Spring 2022",
         "location": "Evanston Campus",
         "description": "text",
         "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-student-equipment-manager.html",
-        "category": "Athletics and Recreation"
+        "category": "Athletics and Recreation",
+        "department": "Athletics/ Equipment"
     },
-    "Swim Instructor": {
+    "Athletics and Recreation: Swim Instructor": {
         "title": "Swim Instructor",
         "id": 9,
-        "pay": "$13",
+        "pay": 13,
         "term": "Spring 2022",
         "location": "Evanston Campus",
         "description": "text",
         "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-swim-instructor.html",
-        "category": "Athletics and Recreation"
+        "category": "Athletics and Recreation",
+        "department": "Athletics and Recreation"
     },
-    "Performance Nutrition Aide": {
+    "Athletics Performance Nutrition: Performance Nutrition Aide": {
         "title": "Performance Nutrition Aide",
         "id": 10,
-        "pay": "$13",
+        "pay": 13,
         "term": "Spring 2022",
         "location": "Evanston Campus",
         "description": "text",
         "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-performance-nutrition-performance-nutrition-aide.html",
-        "category": "Athletics and Recreation"
+        "category": "Technical",
+        "department": "Athletics Performance Nutrition"
+    },
+    "Kellogg School of Management: Computer Science Work-Study": {
+        "title": "Computer Science Work-Study",
+        "id": 11,
+        "pay": 15,
+        "term": "Spring 2022",
+        "location": "Evanston Campus",
+        "description": "text",
+        "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/kellogg-school-of-management-operations-department-work-study.html",
+        "category": "Technical",
+        "department": "Kellogg School of Management"
+    },
+    "Bienen School Concert Management Office: Technical Staff": {
+        "title": "Technical Staff",
+        "id": 12,
+        "pay": 13,
+        "term": "Spring 2022",
+        "location": "Evanston Campus",
+        "description": "text",
+        "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/bienen-school-of-music---concert-management-office-technical-staff.html",
+        "category": "Technical",
+        "department": "Bienen School Concert Management Office"
+    },
+    "Center for Communication & Public Policy /Communication Studies: WordPress Editor /Web Master": {
+        "title": "WordPress Editor /Web Master",
+        "id": 13,
+        "pay": 15,
+        "term": "Spring 2022",
+        "location": "Evanston Campus",
+        "description": "text",
+        "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/center-for-communication-public-policy-communication-studies-wordpress-editor-web-master.html",
+        "category": "Technical",
+        "department": "Center for Communication & Public Policy /Communication Studies"
+    },
+    "Medill: Computer Programmer Aide 2": {
+        "title": "Computer Programmer Aide 2",
+        "id": 14,
+        "pay": 13,
+        "term": "Spring 2022",
+        "location": "Evanston Campus",
+        "description": "text",
+        "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-computer-programmer-aide-2.html",
+        "category": "Technical",
+        "department": "Medill"
+    },
+
+    "Earth and Planetary Sciences: Lab Aide 5": {
+        "title": "Lab Aide 5",
+        "id": 15,
+        "pay": 15,
+        "term": "Spring 2022",
+        "location": "Evanston Campus",
+        "description": "text",
+        "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/earth-and-planetary-sciences-lab-aide-5.html",
+        "category": "Laboratory Work",
+        "department": "Earth and Planetary Sciences"
+    },
+    "Department of Ophthalmology: Laboratory Aide 4": {
+        "title": "Laboratory Aide 4",
+        "id": 16,
+        "pay": 16,
+        "term": "Spring 2022",
+        "location": "Chicago Campus",
+        "description": "text",
+        "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/department-of-ophthalmology-laboratory-aide-4.html",
+        "category": "Laboratory Work",
+        "department": "Department of Ophthalmology"
+    },
+
+    "Querrey Simpson Institute for Bioelectronics (QSIB): Maintenance Aide 1": {
+        "title": "Maintenance Aide 1",
+        "id": 17,
+        "pay": 13,
+        "term": "Spring 2022",
+        "location": "Evanston Campus",
+        "description": "text",
+        "link": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/querrey-simpson-institute-for-bioelectronics-qsib-maintenance-aide-1.html",
+        "category": "Laboratory Work",
+        "department": "Querrey Simpson Institute for Bioelectronics (QSIB)"
     }
 }

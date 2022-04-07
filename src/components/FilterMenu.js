@@ -23,6 +23,20 @@ const FilterMenu = ({filterCategories, setFilterCategories}) => {
           Athletics and Recreation
         </label>
       </div>
+      <div>
+        <input class="form-check-input" type="checkbox" value="Technical" id="flexCheckDefault"
+          onChange={e => setFilterCategories(toggle(e.target.value, filterCategories))}/>
+        <label class="form-check-label" for="flexCheckDefault">
+          Technical
+        </label>
+      </div>
+      <div>
+        <input class="form-check-input" type="checkbox" value="Laboratory Work" id="flexCheckDefault"
+          onChange={e => setFilterCategories(toggle(e.target.value, filterCategories))}/>
+        <label class="form-check-label" for="flexCheckDefault">
+          Laboratory Work
+        </label>
+      </div>
     </div>
   )
 }
