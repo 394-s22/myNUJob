@@ -12,13 +12,13 @@ const Job = ({ job }) => {
                 <div className="card-title"> {job.title} 
                     <button className='apply-button'
                         onClick={() => openLink(job.link)}>
-                        Apply
+                        <b>Apply</b>
                     </button>
                 </div>
 
                 <div className="card-body">
                     <div className="row">
-                        <div className='card-text col-sm'> {job.pay}/hr </div>
+                        <div className='card-text col-sm'> ${job.pay}/hr </div>
                         <div className='card-text col-sm'> {job.term} </div>
                         <div className='card-text col-sm'> {job.location} </div>
                         
