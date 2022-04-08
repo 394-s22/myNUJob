@@ -1,109 +1,27 @@
+
 .App {
   text-align: center;
+}
+
+.app-body * {
+  box-sizing: border-box;
+  /* border: solid 2px black; */
+}
+
+.app-body {
+  display: flex;
+  flex-direction: column;
+}
+
+Nav {
+  top: 0;
+  position: sticky;
+  z-index: 100;
 }
 
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 100px;
-}
-
-.cards {
-  width: 80%;
-  
-}
-
-.card {
-  background-color: #828282;
-  margin-top: 15px;
-}
-
-.card-text {
-  color: #828282;
-}
-
-.card-title {
-  font-weight: bold;
-  padding-top: 10px;
-  padding-left: 10px;
-  color: #684c96;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.apply-button{
-  margin-right: 10px;
-  background-color: #795fad; 
-  border: solid 1px;
-  border-radius: 10%;
-  justify-self: center;
-  color: white;
-  padding: 7px;
-  padding-left: 11px;
-  padding-right: 11px;
-}
-
-.filters {
-  width: 20%;
-}
-
-/* nav{
-  border-bottom: 1px solid black;
-} */
-
-.nav {
-  display: flex;
-  justify-content: center;
-  background-color: #E0E0E0;
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  top: 0;
-}
-
-.nav-title{
-  transition: color 0.5s ease-in;
-  color: #4F4851;
-  font-weight: bold;
-  font-size: 3em;
-}
-
-.nav-title > span.nav-title-nu{
-  transition: inherit;
-}
-
-.nav-title:hover{
-  color:black;
-}
-
-
-.nav-title:hover > span.nav-title-nu {
-  color:#684c96;
-}
-
-
-.filter-menu {
-  padding-top: 15px;
-}
-
-.filter-menu .form-check-label{
-  padding-left: 10px;
-}
-
-.filter-menu h4{
-  font-size: 18px;
-}
-
-.form-check-input {
-  background-color: #fff;
-  border: 1px solid #ced0d4;
-  border-radius: 4px;
-  box-sizing: content-box;
-  cursor: pointer;
-  height: 20px;
-  min-width: 20px;
-  padding: 0;
-  width: 20px;
+  margin-top: 50px;
 }

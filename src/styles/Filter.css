@@ -1,0 +1,25 @@
+.filter {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.form-check-label {
+    padding-left: 10px;
+}
+
+.form-check-input {
+    width: 100%;
+}
+
+/* .form-check-input {
+    background-color: #fff;
+    border: 1px solid #ced0d4;
+    border-radius: 4px;
+    box-sizing: content-box;
+    cursor: pointer;
+    height: 20px;
+    min-width: 20px;
+    padding: 0;
+    width: 20px;
+} */

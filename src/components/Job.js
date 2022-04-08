@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-
+import React from 'react'
+import '../styles/Job.css'
 
 const openLink = (url) => {
     window.open(url)

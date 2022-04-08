@@ -1,42 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
+import '../styles/FilterMenu.css'
+import Filter from './Filter.js'
 
-const FilterMenu = ({filterCategories, setFilterCategories}) => {
+// const categories = ["Research", "Athletics and Recreation", "Technical", "Laboratory Work"]
 
-  const toggle = (x, lst) =>
-    lst.includes(x) ? lst.filter(y => y !== x) : [x, ...lst];
+const FilterMenu = ({jobCategories, filterCategories, setFilterCategories}) => {
 
   return (
     <div className='filter-menu'>
-      <h2>Filter by</h2>
+      <h2>Filters</h2>
       <h4>Category</h4>
-      <div>
-        <input class="form-check-input" type="checkbox" value="Research" id="flexCheckDefault"
-          onChange={e => setFilterCategories(toggle(e.target.value, filterCategories))}/>
-        <label class="form-check-label" for="flexCheckDefault">
-          Research
-        </label>
-      </div>
-      <div>
-        <input class="form-check-input" type="checkbox" value="Athletics and Recreation" id="flexCheckDefault"
-          onChange={e => setFilterCategories(toggle(e.target.value, filterCategories))}/>
-        <label class="form-check-label" for="flexCheckDefault">
-          Athletics and Recreation
-        </label>
-      </div>
-      <div>
-        <input class="form-check-input" type="checkbox" value="Technical" id="flexCheckDefault"
-          onChange={e => setFilterCategories(toggle(e.target.value, filterCategories))}/>
-        <label class="form-check-label" for="flexCheckDefault">
-          Technical
-        </label>
-      </div>
-      <div>
-        <input class="form-check-input" type="checkbox" value="Laboratory Work" id="flexCheckDefault"
-          onChange={e => setFilterCategories(toggle(e.target.value, filterCategories))}/>
-        <label class="form-check-label" for="flexCheckDefault">
-          Laboratory Work
-        </label>
-      </div>
+      {jobCategories.map((category) => 
+        <Filter filterCategories={filterCategories} setFilterCategories={setFilterCategories} value={category} />
+      )}
     </div>
   )
 }
