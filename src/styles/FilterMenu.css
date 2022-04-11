@@ -1,0 +1,11 @@
+.filter-menu {
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f0fe;
+}
+
+h4 {
+    font-size: 18px;
+}

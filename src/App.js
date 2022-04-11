@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 import JobList from './components/JobList.js';
 import FilterMenu from './components/FilterMenu.js';
-import Nav from './components/Nav.js';
+import NavBar from './components/NavBar.js';
 
 import { useData } from './utilities/firebase.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -127,12 +127,17 @@ const App = () => {
 	if (loading) return <h1>Loading your jobs...</h1>
 
 	console.log(Object.entries(jobList))
+	const jobCategories = Array.from(new Set(Object.values(jobList).map((j) => {
+		return (j.category)
+	})))
+	console.log(jobCategories)
+
 
 	return (
-		<div>
-			<Nav />
+		<div className="app-body">
+			<NavBar />
 			<div className="container">
-				<FilterMenu filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
+				<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
 				<JobList jobs={Object.values(jobList)} filterCategories={filterCategories} />
 			</div>
 		</div>

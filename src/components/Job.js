@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-
+import React from 'react'
+import '../styles/Job.css'
 
 const openLink = (url) => {
     window.open(url)
@@ -12,7 +12,7 @@ const Job = ({ job }) => {
                 <div className="card-title"> {job.title} 
                     <button className='apply-button'
                         onClick={() => openLink(job.link)}>
-                        <b>Apply</b>
+                        <b>More Info</b>
                     </button>
                 </div>
                 <div className="card-category">
