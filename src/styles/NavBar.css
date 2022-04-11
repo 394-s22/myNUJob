@@ -9,8 +9,7 @@
 .nav-title {
     padding: 5px 30px 5px 30px;
     transition: color 0.5s ease-in;
-    /* color: #4F4851; */
-    color: black;
+    color: #292c2e;
     font-weight: bold;
     font-size: 3em;
 }

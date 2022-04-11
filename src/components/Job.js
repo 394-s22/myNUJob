@@ -12,7 +12,7 @@ const Job = ({ job }) => {
                 <div className="card-title"> {job.title} 
                     <button className='apply-button'
                         onClick={() => openLink(job.link)}>
-                        <b>Apply</b>
+                        <b>More Info</b>
                     </button>
                 </div>
 
