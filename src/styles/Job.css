@@ -7,6 +7,10 @@
     margin-top: 15px;
 }
 
+.card-category {
+    padding-left: 10px;
+}
+
 .card-text {
     color: #828282;
 }
