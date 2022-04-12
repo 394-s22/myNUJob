@@ -4,7 +4,7 @@
 
 .card {
     background-color: #828282;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .card-category {
@@ -26,7 +26,7 @@
 }
 
 .apply-button {
-    padding-right: 10px;
+    margin-right: 10px;
     background-color: #795fad;
     border: solid 1px;
     border-radius: 10%;

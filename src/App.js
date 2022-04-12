@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import JobList from './components/JobList.js';
 import FilterMenu from './components/FilterMenu.js';
 import NavBar from './components/NavBar.js';
+import SortBar from './components/SortBar';
 
 import { useData } from './utilities/firebase.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -118,24 +119,26 @@ const App = () => {
 	  })
 	*/
 
+	const [sortWage, setSortWage] = useState("")
+	const [sortDirection, setSortDirection] = useState("")
 	const [filterCategories, setFilterCategories] = useState([])
-
 	const [jobList, loading, error] = useData('/');
 
 
 	if (error) return <h1>{error}</h1>;
 	if (loading) return <h1>Loading your jobs...</h1>
 
-	console.log(Object.entries(jobList))
+	// console.log(Object.entries(jobList))
 	const jobCategories = Array.from(new Set(Object.values(jobList).map((j) => {
 		return (j.category)
 	})))
-	console.log(jobCategories)
+	// console.log(jobCategories)
 
 
 	return (
 		<div className="app-body">
 			<NavBar />
+			<SortBar sortWage={sortWage} setSortWage={setSortWage} sortDirection={sortDirection} setSortDirection={setSortDirection}></SortBar>
 			<div className="container">
 				<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
 				<JobList jobs={Object.values(jobList)} filterCategories={filterCategories} />
