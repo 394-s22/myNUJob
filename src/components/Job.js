@@ -16,7 +16,7 @@ const Job = ({ job }) => {
                     </button>
                 </div>
                 <div className="card-category">
-                    {job.category}
+                    {job.department}
                 </div>
 
                 <div className="card-body">
