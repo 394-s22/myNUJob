@@ -21,7 +21,16 @@ Nav {
 
 .container {
   display: flex;
+  flex-direction: column;
+}
+
+.sort{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filters-and-jobs{
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 50px;
 }

@@ -2,11 +2,12 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { useState } from 'react';
 
-const SortBar = ({sortWage, setSortWage, sortDirection, setSortDirection}) => {
-    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+const SortBar = ({sortDirection, setSortDirection}) => {
+    const [anchorEl, setAnchorEl] = useState(null);
+    const open = anchorEl;
+    const handleClick = (event) => {
       setAnchorEl(event.currentTarget);
     };
     const handleClose = () => {
@@ -22,7 +23,7 @@ const SortBar = ({sortWage, setSortWage, sortDirection, setSortDirection}) => {
           aria-expanded={open ? 'true' : undefined}
           onClick={handleClick}
         >
-          Dashboard
+          Sort by
         </Button>
         <Menu
           id="basic-menu"
@@ -33,9 +34,8 @@ const SortBar = ({sortWage, setSortWage, sortDirection, setSortDirection}) => {
             'aria-labelledby': 'basic-button',
           }}
         >
-          <MenuItem onClick={handleClose}>Profile</MenuItem>
-          <MenuItem onClick={handleClose}>My account</MenuItem>
-          <MenuItem onClick={handleClose}>Logout</MenuItem>
+          <MenuItem onClick={handleClose}>Increasing wage</MenuItem>
+          <MenuItem onClick={handleClose}>Decreasing wage</MenuItem>
         </Menu>
       </div>
     )
