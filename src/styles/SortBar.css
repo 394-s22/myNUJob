@@ -1,5 +1,4 @@
-.sort-bar{
-    display: flex;
-    justify-content: flex-end;
-    color: black;
+.basic-menu{
+    color: purple;
+    font: 100px;
 }
