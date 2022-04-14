@@ -137,8 +137,12 @@ const App = () => {
 		<div className="app-body">
 			<NavBar />
 			<div className="container">
-				<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
-				<JobList jobs={Object.values(jobList)} filterCategories={filterCategories} />
+				<div className = "filterslist">
+					<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
+				</div>
+				<div className = "cardslist">
+					<JobList jobs={Object.values(jobList)} filterCategories={filterCategories} />
+				</div>
 			</div>
 		</div>
 

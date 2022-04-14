@@ -1,9 +1,10 @@
 .filter-menu {
-    margin: 15px;
     padding: 15px;
     display: flex;
     flex-direction: column;
     background-color: #f4f0fe;
+    position : fixed;
+    z-index: 99;
 }
 
 h4 {
