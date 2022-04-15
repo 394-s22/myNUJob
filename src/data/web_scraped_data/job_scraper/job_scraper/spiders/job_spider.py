@@ -21,7 +21,7 @@ class JobSpiderSpider(scrapy.Spider):
 
         return job_dict
     
-    def parse_helper(self, job_details):
+    def parse_clean_job(self, job_details):
         job_details = [j for j in job_details if j != ': ' if j != ':' if j != '\xa0']
 
         for idx, job in enumerate(job_details):
@@ -33,7 +33,7 @@ class JobSpiderSpider(scrapy.Spider):
                 job_details[idx] = new_job
         return job_details
 
-    def parse_job_json(self, job_details, job_dict):
+    def parse_populate_job(self, job_details, job_dict):
         for idx, elem in enumerate(job_details):
             # even indices are the keys, odd indices are the pairs to the job description
             if (idx%2 == 0):
