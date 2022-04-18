@@ -21,7 +21,7 @@ class JobSpiderSpider(scrapy.Spider):
 
         job_dict = {job_title: {}}
         job_details = self.parse_clean_job(job_details)
-        self.parse_populate_job(job_details, job_dict[job_title])
+        self.parse_populate_job(job_details, job_dict[job_title], response.url)
 
         yield job_dict
 
@@ -51,12 +51,36 @@ class JobSpiderSpider(scrapy.Spider):
 
         return job_details
 
-    def parse_populate_job(self, job_details, job_dict):
+    def parse_populate_job(self, job_details, job_dict, url):
+        key = ''
         for idx, elem in enumerate(job_details):
             if elem.isupper():
-                job_dict[elem] = job_details[idx+1]
+                key = elem
+            else:
+                if key in job_dict.keys():
+                    if job_dict[key] == ' ':
+                        job_dict[key] = job_dict[key] + elem
+                    else:
+                        job_dict[key] = job_dict[key] + ' ' + elem
+                else:
+                    job_dict[key] = elem
+
+        job_dict["URL"] = url
+        self.parse_wage_list(job_dict)
+
+    def parse_wage_list(self, job_dict):
+        for k, pay in job_dict.items():
+            if k == "PAY RATE":
+                pay = pay.replace('$', '')
+                pay = pay.replace('/hr', '')
+                pay = pay.replace(',', '')
+                pay = pay.replace('-', ' ')
+                pay = pay.replace(' DOE', '')
+                pay_range = []
+                for p in pay.split():
+                    p = pay_range.append(float(p))
+                job_dict[k] = pay_range
 
         
-    # TODO: Deeper cleaning
-    # TODO: accumulate data overlapping in more than one sentence
-     
+    # TODO: pay rate to list  
+    # TODO: remove spacing before email and phone numbers   

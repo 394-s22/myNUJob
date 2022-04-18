@@ -12,8 +12,8 @@ BOT_NAME = 'job_scraper'
 SPIDER_MODULES = ['job_scraper.spiders']
 NEWSPIDER_MODULE = 'job_scraper.spiders'
 
-FEED_URI = 'jobs_scrapy.json'
-FEED_FORMAT = 'json'
+# FEED_URI = 'jobs_scrapy.json'
+# FEED_FORMAT = 'json'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
