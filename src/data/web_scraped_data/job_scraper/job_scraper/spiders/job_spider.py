@@ -28,13 +28,27 @@ class JobSpiderSpider(scrapy.Spider):
 
     def parse_clean_job(self, job_details):
         job_details = [j for j in job_details if j != ': ' if j != ':' if j != '\u00a0']
-        # for idx, job in enumerate(job_details):
-        #     if ': ' in job:
-        #         new_job = job[1:]
-        #         job_details[idx] = new_job
-        #     elif ':\xa0' in job:
-        #         new_job = job[2:]
-        #         job_details[idx] = new_job
+        
+        for idx, job in enumerate(job_details):
+            job = job.replace("\u00a0", " ")
+            job = job.replace(": ", '')
+            job = job.replace(":", '')
+            job = job.replace("\u2019", '\'')
+            job_details[idx] = job
+            # if ': ' in job:
+            #     start_idx = job.index(': ')
+            #     new_job = job[2:]
+            #     job_details[idx] = new_job
+            # elif ':\u00a0' in job:
+            #     new_job = job[2:]
+            #     job_details[idx] = new_job
+            # elif ':' in job:
+            #     new_job = job[1:]
+                
+
+        # with open('data.json', 'w') as f:
+        #     json.dump(job_details, f, ensure_ascii=False)
+
         return job_details
 
     def parse_populate_job(self, job_details, job_dict):
