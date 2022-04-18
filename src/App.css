@@ -21,12 +21,16 @@ Nav {
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .sort{
   display: flex;
   justify-content: flex-end;
+}
+
+.sortbar{
+  position: fixed;
 }
 
 .filters-and-jobs{
@@ -38,9 +42,20 @@ Nav {
 
 
 .cardslist{
-  width: 80%
+  width: 80%;
+  justify-content: right;
+  z-index: 99;
+  margin-left: 20%;
 }
 
 .filterslist{
   justify-content: left;
+  position: fixed;
+  z-index: 99;
+}
+
+
+.topbar{
+  position: fixed;
+  z-index: 1000;
 }
