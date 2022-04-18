@@ -23,7 +23,7 @@ const JobList = ({jobs, filterCategories, sortDirection}) => {
       {filterCategories.length === 0 ? 
         jobs.map((j) => 
         <Job job={j} key={j.id}/>) :
-        jobs.filter(j => filterCategories.includes(j.category)).map((j) => 
+          jobs.filter(j => filterCategories.includes(j.category)).map((j) => 
         <Job job={j} key={j.id} />)
       }
     </ul>

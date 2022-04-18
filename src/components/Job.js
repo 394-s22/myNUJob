@@ -10,13 +10,14 @@ const Job = ({ job }) => {
         <div className='container-fluid' >
             <div className="card">
                 <div className="card-title"> {job.title} 
+
+                </div>
+                <div className="card-category">
+                    {job.department}
                     <button className='apply-button'
                         onClick={() => openLink(job.link)}>
                         <b>More Info</b>
                     </button>
-                </div>
-                <div className="card-category">
-                    {job.category}
                 </div>
 
                 <div className="card-body">

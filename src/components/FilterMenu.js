@@ -11,7 +11,11 @@ const FilterMenu = ({jobCategories, filterCategories, setFilterCategories}) => {
       <h2>Filters</h2>
       <h4>Category</h4>
       {jobCategories.map((category) => 
-        <Filter filterCategories={filterCategories} setFilterCategories={setFilterCategories} value={category} />
+        <Filter 
+          filterCategories={filterCategories} 
+          setFilterCategories={setFilterCategories} 
+          value={category}
+          key={category} />
       )}
     </div>
   )

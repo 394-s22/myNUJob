@@ -33,4 +33,14 @@ Nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 50px;
+}
+
+
+.cardslist{
+  width: 80%
+}
+
+.filterslist{
+  justify-content: left;
 }

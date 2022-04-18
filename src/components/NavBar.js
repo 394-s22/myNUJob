@@ -1,4 +1,5 @@
 import '../styles/NavBar.css'
+import Search from './Search.js';
 
 const NavBar = () => {
   return (
@@ -6,8 +7,8 @@ const NavBar = () => {
       <div className="nav-title">
         my<span className="nav-title-nu">NU</span>Job
       </div>
-      <div class="form-outline">
-        {/* <input type="search" id="form1" class="form-control" placeholder="Search Query" aria-label="Search" /> */}
+      <div className="form-outline">
+        {/* <Search/> */}
       </div>
       <a className="nav-item nav-link nav-about" data-testid="about-link" href="/">
         <div className="nav-about-text">About</div>

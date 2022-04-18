@@ -139,10 +139,10 @@ const App = () => {
 		<div className="app-body">
 			<NavBar />
 			<div className="container">
-				<div className="sort">
+				<div className="filterslist">
 					<SortBar sortDirection={sortDirection} setSortDirection={setSortDirection} />
 				</div>
-				<div className="filters-and-jobs">
+				<div className="cardslist">
 					<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
 					<JobList jobs={Object.values(jobList)} filterCategories={filterCategories} sortDirection={sortDirection} />
 				</div>
