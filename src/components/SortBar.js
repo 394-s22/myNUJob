@@ -21,7 +21,14 @@ const SortBar = ({sortDirection, setSortDirection}) => {
       setAnchorEl(event.currentTarget);
     };
 
-    const handleClose = () => {
+    const handleClose = e => {
+      const direction  = e.target.innerText;
+      console.log(direction)
+
+      
+      if (direction){
+        setSortDirection(direction);
+      }
       setAnchorEl(null);
     };
   
@@ -46,8 +53,9 @@ const SortBar = ({sortDirection, setSortDirection}) => {
             'aria-labelledby': 'basic-button', 
           }}
         >
-          <MenuItem onClick={handleClose}>Increasing wage</MenuItem>
-          <MenuItem onClick={handleClose}>Decreasing wage</MenuItem>
+          <MenuItem onClick={handleClose}>Increasing Wage</MenuItem>
+          <MenuItem onClick={handleClose}>Decreasing Wage</MenuItem>
+          <MenuItem onClick={handleClose}>A to Z</MenuItem>
         </Menu>
       </div>
     )

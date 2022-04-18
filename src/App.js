@@ -119,7 +119,7 @@ const App = () => {
 	  })
 	*/
 
-	const [sortWage, setSortWage] = useState("")
+	// const [sortWage, setSortWage] = useState("")
 	const [sortDirection, setSortDirection] = useState("")
 	const [filterCategories, setFilterCategories] = useState([])
 	const [jobList, loading, error] = useData('/');
@@ -140,11 +140,11 @@ const App = () => {
 			<NavBar />
 			<div className="container">
 				<div className="sort">
-					<SortBar sortDirection={sortDirection} setSortDirection={setSortDirection}></SortBar>
+					<SortBar sortDirection={sortDirection} setSortDirection={setSortDirection} />
 				</div>
 				<div className="filters-and-jobs">
 					<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
-					<JobList jobs={Object.values(jobList)} filterCategories={filterCategories} />
+					<JobList jobs={Object.values(jobList)} filterCategories={filterCategories} sortDirection={sortDirection} />
 				</div>
 			</div>
 		</div>
