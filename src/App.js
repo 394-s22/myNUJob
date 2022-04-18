@@ -139,8 +139,6 @@ const App = () => {
 		<div className="app-body">
 			<NavBar />
 			<SortBar className = "sortbar" sortDirection={sortDirection} setSortDirection={setSortDirection} />
-
-
 			<div className="container">
 				<div className="filterslist">
 					<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} />

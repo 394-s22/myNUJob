@@ -55,7 +55,7 @@ const SortBar = ({sortDirection, setSortDirection}) => {
         >
           <MenuItem onClick={handleClose}>Increasing Wage</MenuItem>
           <MenuItem onClick={handleClose}>Decreasing Wage</MenuItem>
-          <MenuItem onClick={handleClose}>A to Z</MenuItem>
+          <MenuItem onClick={handleClose}>Alphabetical Order</MenuItem>
         </Menu>
       </div>
     )
