@@ -8,12 +8,15 @@ const JobList = ({jobs, filterCategories, sortDirection}) => {
     case "Increasing Wage":
       jobs.sort((a, b) => {return a.pay - b.pay});
       break;
+    
     case "Decreasing Wage":
       jobs.sort((a, b) => {return b.pay - a.pay});
       break;
-    case "A to Z":
-      jobs.sort((a, b) => {return a.title < b.title ? -1 : 1});
+    
+    case "Alphabetical Order":
+      jobs.sort((a, b) => {return b.title - a.title});
       break;  
+    
     default:
       break;
   }
