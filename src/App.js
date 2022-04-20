@@ -25,13 +25,17 @@ const App = () => {
 	return (
 		<div className="app-body">
 			<NavBar />
-			<SortBar className = "sortbar" sortDirection={sortDirection} setSortDirection={setSortDirection} />
 			<div className="container">
-				<div className="filterslist">
-					<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
+				<div className="sort-bar">
+					<SortBar sortDirection={sortDirection} setSortDirection={setSortDirection} />
 				</div>
-				<div className="cardslist">
-					<JobList jobs={Object.values(jobList)} filterCategories={filterCategories} sortDirection={sortDirection} />
+				<div className = "filters-and-jobs">
+					<div className="filters-list">
+						<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
+					</div>
+					<div className="cards-list">
+						<JobList jobs={Object.values(jobList)} filterCategories={filterCategories} sortDirection={sortDirection} />
+					</div>
 				</div>
 			</div>
 		</div>

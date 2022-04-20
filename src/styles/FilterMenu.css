@@ -1,9 +1,11 @@
 .filter-menu {
-    padding: 15px;
+    top: 130px;
+    position: sticky;
+    background-color: #f4f0fe;
     display: flex;
     flex-direction: column;
-    background-color: #f4f0fe;
-    z-index: 99;
+    margin: 15px;
+    padding: 15px;
 }
 
 h4 {

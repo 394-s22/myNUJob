@@ -19,43 +19,29 @@ Nav {
   z-index: 100;
 }
 
+.app-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.sort{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.sortbar{
-  position: fixed;
+.sort-bar{
+  align-self: flex-end;
 }
 
 .filters-and-jobs{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 50px;
 }
 
-
-.cardslist{
+.cards-list{
   width: 80%;
-  justify-content: right;
-  z-index: 99;
-  margin-left: 20%;
 }
 
-.filterslist{
-  justify-content: left;
-  position: fixed;
-  z-index: 99;
-}
-
-
-.topbar{
-  position: fixed;
-  z-index: 1000;
+.filters-list{
+  position: sticky;
 }
