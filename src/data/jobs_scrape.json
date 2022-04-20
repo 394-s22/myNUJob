@@ -1,10 +1,14 @@
 {
-  "Athletics and Recreation: General Info": [{}],
-  "Concerts@Bienen: General Info": [{}],
-  "Library: General Info": [{}],
-  "Norris University Center: General Info": [{}],
-  "NU Information Technology (NUIT) : General Info": [{}],
-  "Residential Services: General Info": [{}],
+  "Athletics and Recreation: General Info": [
+    { "CATEGORY": "Athletics-and-Recreation" }
+  ],
+  "Concerts@Bienen: General Info": [{ "CATEGORY": "Other" }],
+  "Library: General Info": [{ "CATEGORY": "Other" }],
+  "Norris University Center: General Info": [{ "CATEGORY": "Other" }],
+  "NU Information Technology (NUIT) : General Info": [
+    { "CATEGORY": "Technical" }
+  ],
+  "Residential Services: General Info": [{ "CATEGORY": "Other" }],
   "Administration Faculty Affairs - Weinberg College: Clerical Aide 2": [
     {
       "TERM AVAILABLE": "Spring 2022",
@@ -13,13 +17,14 @@
       "WORK ARRANGEMENTS": "In person only",
       "DEPARTMENT": "Administration/Faculty Affairs, Weinberg College",
       "JOB DESCRIPTION": "This is primarily a front desk position in the Weinberg Dean\u2019s Office. Spring 2022 hours needed are Mondays and Wednesdays from 10am -3:30pm. Re-employment in subsequent quarters is contingent upon availability.\nOther duties may include (1) providing general administrative office support such as digitizing documents, electronic/paper filing, copying, making deliveries, reception, and sorting mail; (2) preparing and updating\ndocuments like Word files, Excel spreadsheets, and Adobe PDFs; (3) reviewing and updating website; (4) performing other duties as assigned in a supportive environment.",
-      "QUALIFICATIONS": "Must be a Northwestern undergraduate student with a Federal Work-Study allotment for the 2021-2022 academic year (CAESAR > Financial Aida > View My Financial Aid > [2022].)\nPreferred candidates will demonstrate excellent communication and interpersonal skills, flexibility and willingness to learn new things, attention to detail, the ability to work with sensitive information and maintain confidentiality, and strong computer skills (esp. Adobe Acrobat Pro & Microsoft Office Suite including Excel).",
+      "QUALIFICATIONS": "Must be a Northwestern undergraduate student with a Federal Work-Study allotment for the 2021-2022 academic year (CAESAR > Financial Aid > View My Financial Aid > [2022].)\nPreferred candidates will demonstrate excellent communication and interpersonal skills, flexibility and willingness to learn new things, attention to detail, the ability to work with sensitive information and maintain confidentiality, and strong computer skills (esp. Adobe Acrobat Pro & Microsoft Office Suite including Excel).",
       "PAY RATE": [13.1],
       "CONTACT NAME": "Tamara Rosner",
       "CONTACT PHONE NUMBER": "(847) 491-2210",
       "CONTACT EMAIL": "t-rosner@northwestern.edu",
       "ID": 6,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/administrationfaculty-affairs---weinberg-college-clerical-aide-2.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/administrationfaculty-affairs---weinberg-college-clerical-aide-2.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "American Studies: Newsletter Creation": [
@@ -36,7 +41,8 @@
       "CONTACT PHONE NUMBER": "(847) 467-2262",
       "CONTACT EMAIL": "julie.lavin@northwestern.edu",
       "ID": 7,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/american-studies-newsletter-creation.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/american-studies-newsletter-creation.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Art Theory and Practice: Event Aide": [
@@ -53,7 +59,8 @@
       "CONTACT PHONE NUMBER": "(847) 491-7346",
       "CONTACT EMAIL": "matthew.martin1@northwestern.edu",
       "ID": 8,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/art-theory-and-practice-event-aide.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/art-theory-and-practice-event-aide.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Asian American Studies Program: Clerical Aide 3": [
@@ -70,7 +77,8 @@
       "CONTACT PHONE NUMBER": "(847) 467-7114",
       "CONTACT EMAIL": "emun@northwestern.edu",
       "ID": 9,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/asian-american-studies-program-clerical-aide-3.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/asian-american-studies-program-clerical-aide-3.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Athletics and Recreation - Women's Basketball: Team Manager": [
@@ -86,7 +94,8 @@
       "CONTACT NAME": "Ivy Abiona",
       "CONTACT EMAIL": "ivy.abiona@northwestern.edu",
       "ID": 10,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation---womens-basketball-team-manager1.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation---womens-basketball-team-manager1.html",
+      "CATEGORY": "Athletics-and-Recreation"
     }
   ],
   "Athletics and Recreation: Football Video Assistant": [
@@ -103,7 +112,8 @@
       "CONTACT PHONE NUMBER": "(847) 467-0884",
       "CONTACT EMAIL": "alexandra.knisely@northwestern.edu",
       "ID": 11,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-football-video-assistant.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-football-video-assistant.html",
+      "CATEGORY": "Athletics-and-Recreation"
     }
   ],
   "Athletics and Recreation: Lifeguard": [
@@ -120,7 +130,8 @@
       "CONTACT PHONE NUMBER": "(847) 467-1470",
       "CONTACT EMAIL": "e-martig@northwestern.edu",
       "ID": 12,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-lifeguard.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-lifeguard.html",
+      "CATEGORY": "Athletics-and-Recreation"
     }
   ],
   "Athletics and Recreation: Student-Equipment Manager": [
@@ -137,7 +148,8 @@
       "CONTACT PHONE NUMBER": "(847) 491-8874",
       "CONTACT EMAIL": "eryk.jackson@northwestern.edu",
       "ID": 13,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-student-equipment-manager.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-student-equipment-manager.html",
+      "CATEGORY": "Athletics-and-Recreation"
     }
   ],
   "Athletics and Recreation: Swim Instructor": [
@@ -154,7 +166,8 @@
       "CONTACT PHONE NUMBER": "(847) 467-1470",
       "CONTACT EMAIL": "e-martig@northwestern.edu",
       "ID": 14,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-swim-instructor.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-swim-instructor.html",
+      "CATEGORY": "Research"
     }
   ],
   "Athletics Performance Nutrition: Performance Nutrition Aide": [
@@ -170,7 +183,8 @@
       "CONTACT PHONE NUMBER": "708-308-9848",
       "CONTACT EMAIL": "lindsay.esposito@nm.org",
       "ID": 15,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-performance-nutrition-performance-nutrition-aide.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-performance-nutrition-performance-nutrition-aide.html",
+      "CATEGORY": "Athletics-and-Recreation"
     }
   ],
   "Bienen School of Music - Concert Management Office: Technical Staff": [
@@ -187,7 +201,8 @@
       "CONTACT PHONE NUMBER:(847) 491-5441": "",
       "CONTACT EMAIL": "events.music@northwestern.edu",
       "ID": 16,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/bienen-school-of-music---concert-management-office-technical-staff.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/bienen-school-of-music---concert-management-office-technical-staff.html",
+      "CATEGORY": "Technical"
     }
   ],
   "Center for Communication & Public Policy  Communication Studies: WordPress Editor  Web Master": [
@@ -204,7 +219,8 @@
       "CONTACT PHONE NUMBER": "(607) 280-7030",
       "CONTACT EMAIL": "erik.nisbet@northwestern.edu",
       "ID": 17,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/center-for-communication-public-policy-communication-studies-wordpress-editor-web-master.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/center-for-communication-public-policy-communication-studies-wordpress-editor-web-master.html",
+      "CATEGORY": "Technical"
     }
   ],
   "Center for Connected Learning and Computer Based Modeling: Program Coordinator": [
@@ -221,7 +237,8 @@
       "CONTACT PHONE NUMBER": "(847) 372-2524",
       "CONTACT EMAIL": "ccl-oas@ccl.northwestern.edu",
       "ID": 18,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/center-for-connected-learning-and-computer-based-modeling-program-coordinator.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/center-for-connected-learning-and-computer-based-modeling-program-coordinator.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Center for Interdisciplinary Exploration and Research in Astrophysics: Communications Aide": [
@@ -238,7 +255,8 @@
       "CONTACT PHONE NUMBER": "847-467-3178",
       "CONTACT EMAIL": "ciera-jobs@northwestern.edu",
       "ID": 19,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/center-for-interdisciplinary-exploration-and-research-in-astrophysics-communications-aide.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/center-for-interdisciplinary-exploration-and-research-in-astrophysics-communications-aide.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Center for Talent Development: Classroom Assistant (Teacher's Aide)": [
@@ -256,24 +274,8 @@
       "CONTACT PHONE NUMBER": "847-467-6848",
       "CONTACT EMAIL": "Amy.lindgren@northwestern.edu",
       "ID": 20,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/center-for-talent-development-classroom-assistant-teachers-aide.html"
-    }
-  ],
-  "Center for Talent Development: Clerical Aide 3": [
-    {
-      "TERM AVAILABLE": "Spring 2022",
-      "NUMBER OF POSITIONS AVAILABLE": "1",
-      "LOCATION": "Northwestern - Evanston Campus",
-      "WORK ARRANGEMENTS": "Remote",
-      "DEPARTMENT": "Center for Talent Development",
-      "JOB DESCRIPTION": "Work to support innovative online programming for gifted youth. Responsibilities may include internet research, data entry and database management, forms processing and correspondence with students and families. Opportunities to support other departments at the Center for Talent Development including the Summer department and the Civic Education Project as needed and desired. Hours flexible.",
-      "QUALIFICATIONS": "Must be a Northwestern undergraduate student with a Federal Work-Study allotment for the 2021-2022 academic year (CAESAR > Financial Aid > View My Financial Aid > [2022].)",
-      "PAY RATE": [14.0],
-      "CONTACT NAME": "Mishal Qureshi",
-      "CONTACT PHONE NUMBER": "(847) 467-2572",
-      "CONTACT EMAIL": "ctd-online@northwestern.edu",
-      "ID": 21,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/center-for-talent-development-clerical-aide-3.html"
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/center-for-talent-development-classroom-assistant-teachers-aide.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Department of Ophthalmology: Laboratory Aide 4": [
@@ -289,8 +291,9 @@
       "CONTACT NAME": "Evan Hsieh",
       "CONTACT PHONE NUMBER": "312-503-4770",
       "CONTACT EMAIL": "yi-wen.hsieh@northwestern.edu",
-      "ID": 22,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/department-of-ophthalmology-laboratory-aide-4.html"
+      "ID": 21,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/department-of-ophthalmology-laboratory-aide-4.html",
+      "CATEGORY": "Laboratory-Work"
     }
   ],
   "Department of Preventive Medicine: Research Lab Assistant": [
@@ -306,8 +309,9 @@
       "CONTACT NAME": "Mahdi Pedram",
       "CONTACT PHONE NUMBER": "(509) 968-8281",
       "CONTACT EMAIL": "mahdi.pedram@northwestern.edu",
-      "ID": 23,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/department-of-preventive-medicine-research-lab-assistant.html"
+      "ID": 22,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/department-of-preventive-medicine-research-lab-assistant.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Earth and Planetary Sciences: Lab Aide 3": [
@@ -323,8 +327,9 @@
       "CONTACT NAME": "Grace Schellinger",
       "CONTACT PHONE NUMBER": "(847) 467-2963",
       "CONTACT EMAIL": "grace.schellinger@northwestern.edu",
-      "ID": 24,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/earth-and-planetary-sciences-lab-aide-3.html"
+      "ID": 23,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/earth-and-planetary-sciences-lab-aide-3.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Earth and Planetary Sciences: Lab Aide 5": [
@@ -339,8 +344,9 @@
       "PAY RATE": [15.0, 16.0],
       "CONTACT NAME": "Mia Tuccillo",
       "CONTACT EMAIL": "miatuccillo2020@u.northwestern.edu",
-      "ID": 25,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/earth-and-planetary-sciences-lab-aide-5.html"
+      "ID": 24,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/earth-and-planetary-sciences-lab-aide-5.html",
+      "CATEGORY": "Laboratory-Work"
     }
   ],
   "Engineering Sciences and Applied Mathematics: Office Assistant": [
@@ -356,8 +362,9 @@
       "CONTACT NAME": "Meelee Park",
       "CONTACT PHONE NUMBER": "(847) 491-5586",
       "CONTACT EMAIL": "meelee.park@northwestern.edu",
-      "ID": 26,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/engineering-sciences-and-applied-mathematics-office-assistant.html"
+      "ID": 25,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/engineering-sciences-and-applied-mathematics-office-assistant.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Facilities Planning: Campus Planning Aide": [
@@ -373,8 +380,9 @@
       "CONTACT NAME": "Heidi Kirar",
       "CONTACT PHONE NUMBER": "(715) 584-1734",
       "CONTACT EMAIL": "heidi.kirar@northwestern.edu",
-      "ID": 27,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/facilities-planning-campus-planning-aide.html"
+      "ID": 26,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/facilities-planning-campus-planning-aide.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Fraternity & Sorority Life: Clerical Aide 3": [
@@ -390,8 +398,9 @@
       "CONTACT NAME": "Cayce Pasko-Stanley",
       "CONTACT PHONE NUMBER": "(847) 491-5479",
       "CONTACT EMAIL": "cayce.pasko@northwestern.edu",
-      "ID": 28,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/fraternity-sorority-life-clerical-aide-3.html"
+      "ID": 27,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/fraternity-sorority-life-clerical-aide-3.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Fraternity & Sorority Life: Public Relations Aide 1": [
@@ -407,8 +416,9 @@
       "CONTACT NAME": "Cayce Pasko-Stanley",
       "CONTACT PHONE NUMBER": "(847) 491-5479",
       "CONTACT EMAIL": "cayce.pasko@northwestern.edu",
-      "ID": 29,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/fraternity-sorority-life-public-relations-aide-1.html"
+      "ID": 28,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/fraternity-sorority-life-public-relations-aide-1.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "FUSE STEAM Education Program-SESP: Research Aide": [
@@ -424,8 +434,9 @@
       "CONTACT NAME": "Anne Stevens",
       "CONTACT PHONE NUMBER": "(847) 491-5627",
       "CONTACT EMAIL": "a-stevens@northwestern.edu",
-      "ID": 30,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/fuse-steam-education-program-sesp-research-aide.html"
+      "ID": 29,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/fuse-steam-education-program-sesp-research-aide.html",
+      "CATEGORY": "Research"
     }
   ],
   "Global Marketing and Communications: Magazine Production Aide": [
@@ -441,8 +452,9 @@
       "CONTACT NAME": "Clare Milliken",
       "CONTACT PHONE NUMBER": "847-467-5933",
       "CONTACT EMAIL": "clare.milliken@northwestern.edu",
-      "ID": 31,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/global-marketing-and-communications-magazine-production-aide.html"
+      "ID": 30,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/global-marketing-and-communications-magazine-production-aide.html",
+      "CATEGORY": "Other"
     }
   ],
   "Kellogg School of Management: Spanish Speaking": [
@@ -458,8 +470,9 @@
       "CONTACT NAME": "Emily Foley",
       "CONTACT PHONE NUMBER": "(847) 650-9542",
       "CONTACT EMAIL": "e-foley@kellogg.northwestern.edu",
-      "ID": 32,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/kellogg-school-of-management---medsopns-department-admin-work-study-remote.html"
+      "ID": 31,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/kellogg-school-of-management---medsopns-department-admin-work-study-remote.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Kellogg School of Management: Computer Science Work-Study": [
@@ -475,8 +488,9 @@
       "CONTACT NAME": "Emily Foley",
       "CONTACT PHONE NUMBER": "(847) 491-5219",
       "CONTACT EMAIL": "e-foley@kellogg.northwestern.edu",
-      "ID": 33,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/kellogg-school-of-management-operations-department-work-study.html"
+      "ID": 32,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/kellogg-school-of-management-operations-department-work-study.html",
+      "CATEGORY": "Technical"
     }
   ],
   "Learning Sciences: Research Aide 2": [
@@ -492,8 +506,9 @@
       "CONTACT NAME": "Jennie Woodring",
       "CONTACT PHONE NUMBER": "847-467-1150",
       "CONTACT EMAIL": "j-woodring@northwestern.edu",
-      "ID": 34,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/learning-sciences-research-aide-2.html"
+      "ID": 33,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/learning-sciences-research-aide-2.html",
+      "CATEGORY": "Administrative"
     },
     {
       "TERM AVAILABLE": "Spring 2022",
@@ -507,8 +522,9 @@
       "CONTACT NAME": "Jennie Woodring",
       "CONTACT PHONE NUMBER": "(847) 467-1150",
       "CONTACT EMAIL": "j-woodring@northwestern.edu",
-      "ID": 35,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/learning-sciences-research-aide-21.html"
+      "ID": 34,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/learning-sciences-research-aide-21.html",
+      "CATEGORY": "Research"
     }
   ],
   "Masters of Science in Energy and Sustainability (MSES): Market Research & Promotions Work Study": [
@@ -524,8 +540,9 @@
       "CONTACT NAME": "Chloe White",
       "CONTACT PHONE NUMBER": "(847) 467-0985",
       "CONTACT EMAIL": "chloe.white@northwestern.edu",
-      "ID": 36,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/masters-of-science-in-energy-and-sustainability-mses-market-research-promotions-work-study.html"
+      "ID": 35,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/masters-of-science-in-energy-and-sustainability-mses-market-research-promotions-work-study.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "McCormick MS in Biotechnology Program: Laboratory Aide 1": [
@@ -541,8 +558,9 @@
       "CONTACT NAME": "Rimgaile Lukosiunaite",
       "CONTACT PHONE NUMBER": "(224) 659-6687",
       "CONTACT EMAIL": "rimgaile-lukosiunaite@northwestern.edu",
-      "ID": 37,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/mccormick-ms-in-biotechnology-program-laboratory-aide-1.html"
+      "ID": 36,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/mccormick-ms-in-biotechnology-program-laboratory-aide-1.html",
+      "CATEGORY": "Research"
     }
   ],
   "McCormick Civil and Environmental: CEE Office Assistant": [
@@ -558,8 +576,9 @@
       "CONTACT NAME": "Charles Martell",
       "CONTACT PHONE NUMBER": "(847) 491-3258",
       "CONTACT EMAIL": "charles.martell1@northwestern.edu",
-      "ID": 38,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/mccormickcivil-and-environmental-cee-office-assistant.html"
+      "ID": 37,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/mccormickcivil-and-environmental-cee-office-assistant.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "McCormick Civil and Environmental: Computer Programmer Aide 3": [
@@ -575,8 +594,9 @@
       "CONTACT NAME": "Charles Martell",
       "CONTACT PHONE NUMBER": "(847) 491-3258",
       "CONTACT EMAIL": "charles.martell1@northwestern.edu",
-      "ID": 39,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/mccormickcivil-and-environmental-computer-programmer-aide-3.html"
+      "ID": 38,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/mccormickcivil-and-environmental-computer-programmer-aide-3.html",
+      "CATEGORY": "Technical"
     }
   ],
   "Media and Design Studio (WCAS): Lab Aide 4 (Developer Programmer Aide)": [
@@ -590,8 +610,9 @@
       "PAY RATE": [15.0],
       "CONTACT NAME": "Matthew Taylor",
       "CONTACT EMAIL": "mtaylor@northwestern.edu",
-      "ID": 40,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/media-and-design-studio-wcas-lab-aide-4-developerprogrammer-aide.html"
+      "ID": 39,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/media-and-design-studio-wcas-lab-aide-4-developerprogrammer-aide.html",
+      "CATEGORY": "Technical"
     }
   ],
   "Medill: Administrative Aide": [
@@ -607,8 +628,9 @@
       "CONTACT NAME": "Tracey Robinson-English",
       "CONTACT PHONE NUMBER": "(847) 401-2066",
       "CONTACT EMAIL": "tracey.robinsonenglish@northwestern.edu",
-      "ID": 41,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-administrative-aide1.html"
+      "ID": 40,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-administrative-aide1.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Medill: Computer Programmer Aide 2": [
@@ -624,8 +646,9 @@
       "CONTACT NAME": "Kathleen Lee",
       "CONTACT PHONE NUMBER": "(847) 467-3882",
       "CONTACT EMAIL": "kathleen.lee@northwestern.edu",
-      "ID": 42,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-computer-programmer-aide-2.html"
+      "ID": 41,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-computer-programmer-aide-2.html",
+      "CATEGORY": "Technical"
     }
   ],
   "Medill: Multimedia Production Aide": [
@@ -641,8 +664,9 @@
       "CONTACT NAME": "Matthew Schrock",
       "CONTACT PHONE NUMBER": "(847) 491-2190",
       "CONTACT EMAIL": "m-schrock@northwestern.edu",
-      "ID": 43,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-multimedia-production-aide.html"
+      "ID": 42,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-multimedia-production-aide.html",
+      "CATEGORY": "Research"
     }
   ],
   "Medill: PR Aide": [
@@ -657,8 +681,9 @@
       "PAY RATE": [13.0, 13.85],
       "CONTACT NAME": "Joe Mathewson",
       "CONTACT EMAIL": "m-joseph@northwestern.edu",
-      "ID": 44,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-pr-aide.html"
+      "ID": 43,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-pr-aide.html",
+      "CATEGORY": "Other"
     }
   ],
   "Medill: Research Aide 2": [
@@ -674,8 +699,9 @@
       "CONTACT NAME": "Douglas Foster",
       "CONTACT PHONE NUMBER": "(847) 467-7661",
       "CONTACT EMAIL": "dmfoster@northwestern.edu",
-      "ID": 45,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-research-aide-21.html"
+      "ID": 44,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-research-aide-21.html",
+      "CATEGORY": "Research"
     }
   ],
   "Medill: Research Aide (DC Photos)": [
@@ -691,8 +717,9 @@
       "CONTACT NAME": "Ellen Shearer",
       "CONTACT PHONE NUMBER": "(202)-661-0102",
       "CONTACT EMAIL": "shearer@northwestern.edu",
-      "ID": 46,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-research-aide-dc-photos.html"
+      "ID": 45,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/medill-research-aide-dc-photos.html",
+      "CATEGORY": "Research"
     }
   ],
   "Neurobiology: Laboratory Aide 1": [
@@ -708,8 +735,9 @@
       "CONTACT NAME": "Alessia Gallio",
       "CONTACT PHONE NUMBER": "(847) 491-4198",
       "CONTACT EMAIL": "alessia.para@northwestern.edu",
-      "ID": 47,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/neurobiology-laboratory-aide-1.html"
+      "ID": 46,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/neurobiology-laboratory-aide-1.html",
+      "CATEGORY": "Laboratory-Work"
     }
   ],
   "Neurology: Laboratory Aide": [
@@ -725,8 +753,9 @@
       "CONTACT NAME": "Steven Lubbe",
       "CONTACT PHONE NUMBER": "312-503-5298",
       "CONTACT EMAIL": "steven.lubbe@northwestern.edu",
-      "ID": 48,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/neurology-laboratory-aide.html"
+      "ID": 47,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/neurology-laboratory-aide.html",
+      "CATEGORY": "Laboratory-Work"
     }
   ],
   "Northwestern Athletics: Communications Assistant": [
@@ -741,8 +770,9 @@
       "PAY RATE": [13.0],
       "CONTACT NAME": "Zach Wingrove",
       "CONTACT EMAIL": "zachary.wingrove@northwestern.edu",
-      "ID": 49,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/northwestern-athletics-communications-assistant.html"
+      "ID": 48,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/northwestern-athletics-communications-assistant.html",
+      "CATEGORY": "Athletics-and-Recreation"
     }
   ],
   "NUCATS-Communications: Content Specialist": [
@@ -757,8 +787,9 @@
       "PAY RATE": [15.0],
       "CONTACT NAME": "Roger Anderson",
       "CONTACT EMAIL": "roger-anderson@northwestern.edu",
-      "ID": 50,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/nucats-communications-content-specialist.html"
+      "ID": 49,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/nucats-communications-content-specialist.html",
+      "CATEGORY": "Other"
     }
   ],
   "Office of Community Education Partnerships: ETHS Partnership Office Administrative Assistant": [
@@ -773,8 +804,9 @@
       "PAY RATE": [13.55],
       "CONTACT NAME": "Kristen Perkins-LaFollette",
       "CONTACT EMAIL": "kristen-perkins@northwestern.edu",
-      "ID": 51,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/office-of-community-education-partnerships-eths-partnership-office-administrative-assistant.html"
+      "ID": 50,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/office-of-community-education-partnerships-eths-partnership-office-administrative-assistant.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Office of Institutional Diversity and Inclusion: Student Intern": [
@@ -790,8 +822,9 @@
       "CONTACT NAME": "Louie Lainez",
       "CONTACT PHONE NUMBER": "(847) 467-5197",
       "CONTACT EMAIL": "louie.lainez@northwestern.edu",
-      "ID": 52,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/office-of-institutional-diversity-and-inclusion-student-intern.html"
+      "ID": 51,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/office-of-institutional-diversity-and-inclusion-student-intern.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Phonathon: Phonathon Aide": [
@@ -807,8 +840,9 @@
       "CONTACT NAME": "Danny Callison",
       "CONTACT PHONE NUMBER": "(847) 491-3071",
       "CONTACT EMAIL": "danny.callison@northwestern.edu",
-      "ID": 53,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/phonathon-phonathon-aide.html"
+      "ID": 52,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/phonathon-phonathon-aide.html",
+      "CATEGORY": "Other"
     }
   ],
   "Plant Biology and Conservation: Conservation Science Research Assistant": [
@@ -823,8 +857,9 @@
       "PAY RATE": [15.0],
       "CONTACT NAME": "Stuart Wagenius",
       "CONTACT EMAIL": "s-wagenius@northwestern.edu",
-      "ID": 54,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/plant-biology-and-conservation-conservation-science-research-assistant.html"
+      "ID": 53,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/plant-biology-and-conservation-conservation-science-research-assistant.html",
+      "CATEGORY": "Research"
     }
   ],
   "Residential Life: Clerical Aide 2": [
@@ -840,8 +875,9 @@
       "CONTACT NAME": "Lesa Darcy-Frost",
       "CONTACT PHONE NUMBER": "(847) 491-3542",
       "CONTACT EMAIL": "lesa@northwestern.edu",
-      "ID": 55,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/residential-life-clerical-aide-2.html"
+      "ID": 54,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/residential-life-clerical-aide-2.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "Robert H  Lurie Cancer Center MHPL Core Lab: Laboratory Aide 3": [
@@ -857,8 +893,9 @@
       "CONTACT NAME": "Katherine Gruner",
       "CONTACT PHONE NUMBER": "312-503-2695",
       "CONTACT EMAIL": "k-gruner@law.northwestern.edu",
-      "ID": 56,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/robert-h.-lurie-cancer-centermhpl-core-lab-laboratory-aide-3.html"
+      "ID": 55,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/robert-h.-lurie-cancer-centermhpl-core-lab-laboratory-aide-3.html",
+      "CATEGORY": "Laboratory-Work"
     }
   ],
   "School of Communication - Radio Television Film Department: RTVF Senior Directing Treasurer": [
@@ -874,8 +911,9 @@
       "CONTACT NAME": "Shannon Pritchard",
       "CONTACT PHONE NUMBER": "(847) 491-7261",
       "CONTACT EMAIL": "shannon.pritchard@northwestern.edu",
-      "ID": 57,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/school-of-communication---radiotelevisionfilm-department-rtvf-senior-directing-treasurer.html"
+      "ID": 56,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/school-of-communication---radiotelevisionfilm-department-rtvf-senior-directing-treasurer.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "School of Communication Office of Undergraduate Programs and Advising: Clerical Aide 2": [
@@ -891,8 +929,9 @@
       "CONTACT NAME": "Deborah Booth",
       "CONTACT PHONE NUMBER": "(847) 491-7214",
       "CONTACT EMAIL": "deborah.booth@northwestern.edu",
-      "ID": 58,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/school-of-communication-office-of-undergraduate-programs-and-advising-clerical-aide-2.html"
+      "ID": 57,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/school-of-communication-office-of-undergraduate-programs-and-advising-clerical-aide-2.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "School of Professional Studies IT Facilities: Audio-Visual Aide 1": [
@@ -908,8 +947,9 @@
       "CONTACT NAME": "Sachin Patel",
       "CONTACT PHONE NUMBER": "(312) 503-2933",
       "CONTACT EMAIL": "s-patelk@northwestern.edu",
-      "ID": 59,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/school-of-professional-studies-itfacilities-audio-visual-aide-1.html"
+      "ID": 58,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/school-of-professional-studies-itfacilities-audio-visual-aide-1.html",
+      "CATEGORY": "Technical"
     }
   ],
   "SESP Learning and Organizational Change: Administrative Aide": [
@@ -925,8 +965,9 @@
       "CONTACT NAME": "Jennifer Pasek",
       "CONTACT PHONE NUMBER": "(847) 491-7376",
       "CONTACT EMAIL": "jennifer.pasek@northwestern.edu",
-      "ID": 60,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/sesp-learning-and-organizational-change-administrative-aide.html"
+      "ID": 59,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/sesp-learning-and-organizational-change-administrative-aide.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "SESP Learning Sciences: Copy Editor": [
@@ -942,8 +983,9 @@
       "CONTACT NAME": "Kelsey Edwards",
       "CONTACT PHONE NUMBER": "(513) 600-7725",
       "CONTACT EMAIL": "kelsey.edwards@northwestern.edu",
-      "ID": 61,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/sesp-learning-sciences-copy-editor.html"
+      "ID": 60,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/sesp-learning-sciences-copy-editor.html",
+      "CATEGORY": "Other"
     }
   ],
   "Strategy Department at Kellogg School of Management: Clerical Aide 3": [
@@ -959,8 +1001,9 @@
       "CONTACT NAME": "Emily Foley",
       "CONTACT PHONE NUMBER": "(847) 491-3121",
       "CONTACT EMAIL": "e-foley@kellogg.northwestern.edu",
-      "ID": 62,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/strategy-department-at-kellogg-school-of-management-clerical-aide-3.html"
+      "ID": 61,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/strategy-department-at-kellogg-school-of-management-clerical-aide-3.html",
+      "CATEGORY": "Administrative"
     }
   ],
   "sustainNU: Communications & Engagement Assistant": [
@@ -972,8 +1015,9 @@
       "CONTACT NAME": "Julie Cahillane",
       "CONTACT PHONE NUMBER": "847-467-1374",
       "CONTACT EMAIL": "sustainNU@northwestern.edu",
-      "ID": 63,
-      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/sustainnu-communications-engagement-assistant.html"
+      "ID": 62,
+      "URL": "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/sustainnu-communications-engagement-assistant.html",
+      "CATEGORY": "Other"
     }
   ]
 }

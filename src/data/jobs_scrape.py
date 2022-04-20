@@ -37,7 +37,7 @@ async def scrape1():
         context = await browser.new_context()
         page = await context.new_page()
         await page.goto("https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/")
-        links_locator = page.locator('#job-list a')
+        links_locator = page.locator('#job-list li')
         # list of dictionaries holding k-v pairs of {key: text and value: link}
         # links_list = []
         jobs_dict = {}  # returned dictionary of jobs and their info
@@ -47,14 +47,16 @@ async def scrape1():
         # change the range to links_count to iterate through all locators
         for i in range(links_count):
             nth = links_locator.nth(i)
-            text = await nth.text_content()  # text of the link (used as key for k-v pairs)
+            # text = await nth.text_content()  # text of the link (used as key for k-v pairs)
             # url of the link (used as value for k-v pairs)
-            link = await nth.get_attribute("href")
+            category = await nth.get_attribute("class")
+            link = await nth.locator('a').get_attribute("href")
             # links_list.append({"text": text, "link": page.url + link})
             sub_page = await context.new_page()
             await sub_page.goto(page.url + link)
             # await sub_page.wait_for_timeout(1000)
             job_title, job_info = await scrape2(sub_page, id_num=i)
+            job_info['CATEGORY'] = category
             if job_title in jobs_dict.keys():
                 jobs_dict[job_title] = jobs_dict[job_title] + [job_info]
             else:
