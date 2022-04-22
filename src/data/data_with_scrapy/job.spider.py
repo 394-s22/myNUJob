@@ -5,7 +5,7 @@ import json
 
 
 class JobSpiderSpider(scrapy.Spider):
-    
+
     name = 'job_spider'
     allowed_domains = ['undergradaid.northwestern.edu']
     base_url = 'https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/'
@@ -14,11 +14,13 @@ class JobSpiderSpider(scrapy.Spider):
     def parse(self, response):
         for link in response.xpath('//ul[@id="job-list"]//li//a'):
             yield response.follow(url=self.base_url + link.xpath('.//@href').get(), callback=self.parse_single_job)
-        
-    # visit all jobs and parse info 
+
+    # visit all jobs and parse info
     def parse_single_job(self, response):
-        job_title = response.xpath('//div[@class="content"]//h1//text()').extract()[0]
-        job_details = response.xpath('//div[@class="content"]//p//text()').extract()
+        job_title = response.xpath(
+            '//div[@class="content"]//h1//text()').extract()[0]
+        job_details = response.xpath(
+            '//div[@class="content"]//p//text()').extract()
 
         job_dict = {job_title: {}}
         job_details = self.parse_clean_job(job_details)
@@ -28,8 +30,9 @@ class JobSpiderSpider(scrapy.Spider):
 
     # clean parse job data
     def parse_clean_job(self, job_details):
-        job_details = [j for j in job_details if j != ': ' if j != ':' if j != '\u00a0']
-        
+        job_details = [j for j in job_details if j !=
+                       ': ' if j != ':' if j != '\u00a0']
+
         for idx, job in enumerate(job_details):
             job = job.replace("\u00a0", " ")
             job = job.replace(": ", '')
@@ -69,4 +72,4 @@ class JobSpiderSpider(scrapy.Spider):
                 pay_range = []
                 for p in pay.split():
                     p = pay_range.append(float(p))
-                job_dict[k] = pay_range  
+                job_dict[k] = pay_range
