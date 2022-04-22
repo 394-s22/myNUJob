@@ -6,6 +6,7 @@ const openLink = (url) => {
 }
 
 const Job = ({ job }) => {
+    console.log(job);
     return (
         <div className='container-fluid' >
             <div className="card">

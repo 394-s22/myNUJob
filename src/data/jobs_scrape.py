@@ -5,6 +5,9 @@ import re
 import json
 import os
 
+# include job title in job info
+# placeholder data for jobs that need deeper scrapes
+
 '''
 key == job title
 value == [job_dict_1, ..., job_dict_n] == list of dictionaries storing info on the job (in a list due to possibility of different jobs with same name)
@@ -90,7 +93,7 @@ async def scrape2(sub_page, id_num):
         # if "Job Description" text is NOT on the page -> need to do deeper scrape following link in the page
         print("do deeper scrape for: ", job_title, '\n')
         job_info = {}  # returned dictionary
-        return (job_title, job_info)  # 'id' value is given by input id_num
+        # return (job_title, job_info)  # 'id' value is given by input id_num
     else:
         # if "Job Description" text is on the page -> all necessary info is on the page
         print("scraped this page:", job_title, '\n')

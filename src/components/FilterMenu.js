@@ -3,6 +3,9 @@ import '../styles/FilterMenu.css'
 import Filter from './Filter.js'
 
 // const categories = ["Research", "Athletics and Recreation", "Technical", "Laboratory Work"]
+// quarter = spring, winter, fall
+// wage 
+// work arrangements
 
 const FilterMenu = ({jobCategories, filterCategories, setFilterCategories}) => {
 

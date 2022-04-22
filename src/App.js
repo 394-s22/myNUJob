@@ -18,6 +18,8 @@ const App = () => {
 	if (error) return <h1>{error}</h1>;
 	if (loading) return <h1>Loading your jobs...</h1>
 
+  console.log(jobList);
+
 	const jobCategories = Array.from(new Set(Object.values(jobList).map((j) => {
 		return (j.category)
 	})))
