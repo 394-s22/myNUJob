@@ -8,10 +8,10 @@ import Filter from './Filter.js'
 // work arrangements
 
 const FilterMenu = ({jobCategories, filterCategories, setFilterCategories}) => {
-  
+
   jobCategories.sort();
   return (
-    <div className='filter-menu'>
+    <div className='filter-menu'> 
       <h2>Filters</h2>
       <h4>Category</h4>
       {jobCategories.map((category) =>
