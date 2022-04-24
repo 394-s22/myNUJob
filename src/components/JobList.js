@@ -14,16 +14,16 @@ const JobList = ({ jobs, filterCategories, sortDirection }) => {
       break;
 
     case "Alphabetical Order":
-      jobs.sort((a, b) => { return b.TITLE - a.TITLE });
+      jobs.sort((a, b) => { return a.TITLE.substring(a.TITLE.indexOf(":")+1).localeCompare(b.TITLE.substring(b.TITLE.indexOf(":")+1)); });
       break;
 
     default:
       break;
   }
 
-  jobs = jobs.filter(j => !j.TITLE.includes("General Info"));
+  // jobs = jobs.filter(j => !j.TITLE.includes("General Info"));
 
-  
+  // console.log(jobs[0].TITLE);
 
   return (
     <ul className="cards">
