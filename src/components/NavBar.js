@@ -10,9 +10,6 @@ const NavBar = () => {
       <div className="form-outline">
         {/* <Search/> */}
       </div>
-      <a className="nav-item nav-link nav-about" data-testid="about-link" href="/">
-        <div className="nav-about-text">About</div>
-      </a>
     </nav>
   )
 }

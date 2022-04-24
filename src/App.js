@@ -26,12 +26,12 @@ const App = () => {
 		<div className="app-body">
 			<NavBar />
 			<div className="container">
-				<div className="sort-bar">
+				{/* <div className="sort-bar">
 					<SortBar sortDirection={sortDirection} setSortDirection={setSortDirection} />
-				</div>
+				</div> */}
 				<div className="filters-and-jobs">
 					<div className="filters-list">
-						<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
+						<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} sortDirection={sortDirection} setSortDirection={setSortDirection} />
 					</div>
 					<div className="cards-list">
 						<JobList jobs={jobList} filterCategories={filterCategories} sortDirection={sortDirection} />

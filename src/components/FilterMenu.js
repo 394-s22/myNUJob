@@ -1,13 +1,15 @@
 import React from 'react'
 import '../styles/FilterMenu.css'
 import Filter from './Filter.js'
+import SortBar from './SortBar.js';
+
 
 // const categories = ["Research", "Athletics and Recreation", "Technical", "Laboratory Work"]
 // quarter = spring, winter, fall
 // wage
 // work arrangements
 
-const FilterMenu = ({jobCategories, filterCategories, setFilterCategories}) => {
+const FilterMenu = ({jobCategories, filterCategories, setFilterCategories, sortDirection, setSortDirection}) => {
   
   jobCategories.sort();
   return (
@@ -21,6 +23,9 @@ const FilterMenu = ({jobCategories, filterCategories, setFilterCategories}) => {
           value={category}
           key={category} />
       )}
+      <div className="sort-bar">
+					<SortBar sortDirection={sortDirection} setSortDirection={setSortDirection} />
+			</div>
     </div>
   )
 }
