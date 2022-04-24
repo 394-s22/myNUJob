@@ -19,7 +19,7 @@ const App = () => {
 	if (loading) return <h1>Loading your jobs...</h1>
 
 	const jobCategories = Array.from(new Set(Object.values(jobList).map((j) => {
-		return (j.CATEGORY)
+		return (j.category)
 	})))
 
 	return (
@@ -29,7 +29,7 @@ const App = () => {
 				<div className="sort-bar">
 					<SortBar sortDirection={sortDirection} setSortDirection={setSortDirection} />
 				</div>
-				<div className="filters-and-jobs">
+				<div className = "filters-and-jobs">
 					<div className="filters-list">
 						<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} />
 					</div>

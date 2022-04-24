@@ -20,6 +20,7 @@ const style = {
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
+
 };
 
 const Job = ({ job }) => {
@@ -44,11 +45,23 @@ const Job = ({ job }) => {
                         aria-describedby="modal-modal-description"
                     >
                         <Box sx={style}>
-                            {Object.entries(job).map(([key, value]) => {
+                            {/* {Object.entries(job).map(([key, value]) => {
                                 return (
                                     <div>
                                         {key}:{value}
-                                    </div>)})}
+                                    </div>)})} */}
+                            <h2>{job.TITLE}</h2>
+                            <div><b>DEPARTMENT:</b> {job["DEPARTMENT"]}</div>
+                            <div><b>TERM AVAILABLE:</b> {job["TERM AVAILABLE"]}</div>
+                            <div><b>LOCATION:</b> {job["LOCATION"]}</div>
+                            <div><b>WORK ARRANGEMENTS:</b> {job["WORK ARRANGEMENTS"]}</div>
+                            <div><b>DEPARTMENT:</b> {job["DEPARTMENT"]}</div>
+                            <div><b>JOB DESCRIPTION:</b> {job["JOB DESCRIPTION"]}</div>
+                            <div><b>QUALIFICATIONS:</b> {job["QUALIFICATIONS"]}</div>
+                            <div><b>PAY RATE:</b> {job["PAY RATE"][0]}</div>
+                            <div><b>CONTACT NAME:</b> {job["CONTACT NAME"]}</div>
+                            <div><b>CONTACT PHONE NUMBER:</b> {job["CONTACT PHONE NUMBER"]}</div>
+                            <div><b>CONTACT EMAIL:</b> {job["CONTACT EMAIL"]}</div>
                         </Box>
                     </Modal>
 
