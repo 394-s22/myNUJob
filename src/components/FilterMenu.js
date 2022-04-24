@@ -4,19 +4,20 @@ import Filter from './Filter.js'
 
 // const categories = ["Research", "Athletics and Recreation", "Technical", "Laboratory Work"]
 // quarter = spring, winter, fall
-// wage 
+// wage
 // work arrangements
 
 const FilterMenu = ({jobCategories, filterCategories, setFilterCategories}) => {
-
+  
+  jobCategories.sort();
   return (
     <div className='filter-menu'>
       <h2>Filters</h2>
       <h4>Category</h4>
-      {jobCategories.map((category) => 
-        <Filter 
-          filterCategories={filterCategories} 
-          setFilterCategories={setFilterCategories} 
+      {jobCategories.map((category) =>
+        <Filter
+          filterCategories={filterCategories}
+          setFilterCategories={setFilterCategories}
           value={category}
           key={category} />
       )}
