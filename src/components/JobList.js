@@ -21,7 +21,7 @@ const JobList = ({ jobs, filterCategories, sortDirection }) => {
       break;
   }
 
-  // jobs = jobs.filter(j => !j.TITLE.includes("General Info"));
+  jobs = jobs.filter(j => !j.TITLE.includes("General Info"));
 
   // console.log(jobs[0].TITLE);
 
