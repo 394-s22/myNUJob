@@ -19,7 +19,7 @@ const App = () => {
 	if (loading) return <h1>Loading your jobs...</h1>
 
 	const jobCategories = Array.from(new Set(Object.values(jobList).map((j) => {
-		return (j.category)
+		return (j.CATEGORY)
 	})))
 
 	return (
