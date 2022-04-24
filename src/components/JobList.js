@@ -18,6 +18,7 @@ const JobList = ({ jobs, filterCategories, sortDirection }) => {
       break;
 
     default:
+      jobs.sort((a, b) => { return a.TITLE.substring(a.TITLE.indexOf(":")+1).localeCompare(b.TITLE.substring(b.TITLE.indexOf(":")+1)); });
       break;
   }
 
