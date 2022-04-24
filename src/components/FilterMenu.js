@@ -12,8 +12,9 @@ import SortBar from './SortBar.js';
 const FilterMenu = ({jobCategories, filterCategories, setFilterCategories, sortDirection, setSortDirection}) => {
   
   jobCategories.sort();
+
   return (
-    <div className='filter-menu'>
+    <div className='filter-menu'> 
       <h2>Filters</h2>
       <h4>Category</h4>
       {jobCategories.map((category) =>
