@@ -21,6 +21,10 @@ const JobList = ({ jobs, filterCategories, sortDirection }) => {
       break;
   }
 
+  jobs = jobs.filter(j => !j.TITLE.includes("General Info"));
+
+  
+
   return (
     <ul className="cards">
       {filterCategories.length === 0 ?
