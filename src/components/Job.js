@@ -49,14 +49,13 @@ const Job = ({ job }) => {
                                     <div>
                                         {key}:{value}
                                     </div>)})} */}
-                            <h2>{job.TITLE}</h2>
-                            <div><b>DEPARTMENT:</b> {job["DEPARTMENT"]}</div>
+                            <h2>{job.TITLE.substring(job.TITLE.indexOf(":")+1)}</h2>
+                            <div><b>JOB DESCRIPTION:</b> {job["JOB DESCRIPTION"]}</div>
+                            <div><b>QUALIFICATIONS:</b> {job["QUALIFICATIONS"]}</div>
                             <div><b>TERM AVAILABLE:</b> {job["TERM AVAILABLE"]}</div>
                             <div><b>LOCATION:</b> {job["LOCATION"]}</div>
                             <div><b>WORK ARRANGEMENTS:</b> {job["WORK ARRANGEMENTS"]}</div>
                             <div><b>DEPARTMENT:</b> {job["DEPARTMENT"]}</div>
-                            <div><b>JOB DESCRIPTION:</b> {job["JOB DESCRIPTION"]}</div>
-                            <div><b>QUALIFICATIONS:</b> {job["QUALIFICATIONS"]}</div>
                             <div><b>PAY RATE:</b> {job["PAY RATE"][0]}</div>
                             <div><b>CONTACT NAME:</b> {job["CONTACT NAME"]}</div>
                             <div><b>CONTACT PHONE NUMBER:</b> {job["CONTACT PHONE NUMBER"]}</div>
@@ -72,7 +71,7 @@ const Job = ({ job }) => {
                 <div className="card-body">
                     <div className="row">
                         <div className='card-text col-sm'> ${job["PAY RATE"][0]}/hr </div>
-                        <div className='card-text col-sm'> {job["TERM AVAILABLE"]} </div>
+                        <div className='card-text col-sm'> {job["WORK ARRANGEMENTS"]} </div>
                         <div className='card-text col-sm'> {job.LOCATION} </div>
                     </div>
                 </div>
