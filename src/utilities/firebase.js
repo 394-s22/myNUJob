@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase/app';
-import { getDatabase, onValue, ref, set } from 'firebase/database';
+import { getDatabase, connectDatabaseEmulator, onValue, ref, set } from 'firebase/database';
 import { useState, useEffect } from 'react';
+import { GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyD7UQB82McTzvzjMjKcUxH_qkQPb1mfOMk",
@@ -15,6 +16,10 @@ const firebaseConfig = {
 
 const firebase = initializeApp(firebaseConfig);
 const database = getDatabase(firebase);
+
+if (window.Cypress) {
+  connectDatabaseEmulator(database, "127.0.0.1", 9000);
+}
 
 export const useData = (path, transform) => {
   const [data, setData] = useState();
