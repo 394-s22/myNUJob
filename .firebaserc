@@ -1,6 +1,7 @@
 {
   "projects": {
-    "myNUJob": "mynujob-394"
+    "myNUJob": "mynujob-394",
+    "default": "mynujob-394"
   },
   "targets": {}
 }
