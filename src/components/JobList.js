@@ -28,6 +28,7 @@ const JobList = ({ jobs, filterCategories, sortDirection }) => {
 
   return (
     <ul className="cards">
+      
       {filterCategories.length === 0 ?
         Object.values(jobs).map((j) =>
           <Job job={j} key={j.ID} />) :

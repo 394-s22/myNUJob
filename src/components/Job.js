@@ -30,7 +30,7 @@ const Job = ({ job }) => {
     const handleClose = () => setOpen(false);
 
     return (
-        <div className='container-fluid' >
+        <div className='container-fluid' data-cy = "job" >
             <div className="card">
                 <div className="card-title"> {job.TITLE.substring(job.TITLE.indexOf(":")+1)}
                     <button className='apply-button'

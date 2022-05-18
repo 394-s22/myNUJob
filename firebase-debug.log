@@ -1,0 +1,47 @@
+[debug] [2022-05-16T15:43:57.414Z] ----------------------------------------------------------------------
+[debug] [2022-05-16T15:43:57.417Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:exec --import=./saved-data npm start
+[debug] [2022-05-16T15:43:57.418Z] CLI Version:   10.5.0
+[debug] [2022-05-16T15:43:57.418Z] Platform:      darwin
+[debug] [2022-05-16T15:43:57.418Z] Node Version:  v16.14.0
+[debug] [2022-05-16T15:43:57.420Z] Time:          Mon May 16 2022 10:43:57 GMT-0500 (Central Daylight Time)
+[debug] [2022-05-16T15:43:57.420Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-16T15:43:57.484Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-16T15:43:57.484Z] > authorizing via signed-in user (bobo513786356@gmail.com)
+[debug] [2022-05-16T15:43:57.694Z] java version "1.8.0_333"
+Java(TM) SE Runtime Environment (build 1.8.0_333-b02
+[debug] [2022-05-16T15:43:57.695Z] )
+Java HotSpot(TM) 64-Bit Server VM (build 25.333-b02, mixed mode)
+
+[debug] [2022-05-16T15:43:57.697Z] Parsed Java major version: 1
+[warn] ⚠  emulators: Support for Java version <= 10 will be dropped soon in firebase-tools@11. Please upgrade to Java version 11 or above to continue using the emulators. 
+[info] i  emulators: Starting emulators: database, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: database, hosting"}}
+[debug] [2022-05-16T15:43:57.731Z] [hub] writing locator at /var/folders/rt/1kp2zp7d3xl6m4g3znsj3j5h0000gn/T/hub-mynujob-394.json
+[debug] [2022-05-16T15:43:57.743Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mynujob-394 [none]
+[debug] [2022-05-16T15:43:57.867Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mynujob-394 200
+[debug] [2022-05-16T15:43:57.867Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mynujob-394 {"projectId":"mynujob-394","projectNumber":"896744341348","displayName":"myNUJob","name":"projects/mynujob-394","resources":{"hostingSite":"mynujob-394","realtimeDatabaseInstance":"mynujob-394-default-rtdb"},"state":"ACTIVE"}
+[debug] [2022-05-16T15:43:57.868Z] database rules config:  []
+[warn] ⚠  database: Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"database"},"message":"Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2022-05-16T15:43:57.872Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-05-16T15:43:57.873Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-05-16T15:43:57.873Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-05-16T15:43:57.873Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/Users/wingshantam/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar","--host","localhost","--port",9000],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/Users/wingshantam/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar\",\"--host\",\"localhost\",\"--port\",9000],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-05-16T15:43:59.919Z] 10:43:59.917 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"10:43:59.917 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2022-05-16T15:44:00.128Z] 10:44:00.128 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"10:44:00.128 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\n"}}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  database: Stopping Database Emulator {"metadata":{"emulator":{"name":"database"},"message":"Stopping Database Emulator"}}
+[debug] [2022-05-16T15:44:00.424Z] 10:44:00.424 [Thread-1] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+ {"metadata":{"emulator":{"name":"database"},"message":"10:44:00.424 [Thread-1] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.\n"}}
+[debug] [2022-05-16T15:44:00.430Z] 10:44:00.429 [Thread-1] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.
+ {"metadata":{"emulator":{"name":"database"},"message":"10:44:00.429 [Thread-1] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.\n"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2022-05-16T15:44:00.490Z] Error: ENOENT: no such file or directory, scandir '/Users/wingshantam/Downloads/cs394/project1/myNUJob/saved-data/database_export'
+    at Object.readdirSync (node:fs:1392:3)
+    at Object.startAll (/usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js:403:30)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Command.emulatorExec [as actionFn] (/usr/local/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js:293:35)
+[error] 
+[error] Error: An unexpected error has occurred.
