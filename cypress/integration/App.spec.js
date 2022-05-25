@@ -8,7 +8,13 @@ describe ('Test App', () => {
 
     it ('opens with jobs', () => {
         cy.visit ('/');
-        cy.get('[data-cy=job]').should('contain', 'Fall CS');
+        cy.get('[data-cy=job]').should('contain', 'Administrative Aide');
+      });
+
+      it('shows modal', () => {
+        cy.visit ('/');
+        cy.get('[data-cy=modal]').click();
+        cy.get('[data-cy=jobInfo]').should('contain' ,'JOB DESCRIPTION');
       });
   
   });

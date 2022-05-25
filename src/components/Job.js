@@ -30,7 +30,7 @@ const Job = ({ job }) => {
     const handleClose = () => setOpen(false);
 
     return (
-        <div className='container-fluid' data-cy = "job" >
+        <div className='container-fluid' >
             <div className="card">
                 <div className="card-title"> {job.TITLE.substring(job.TITLE.indexOf(":")+1)}
                     <button className='apply-button'
@@ -42,8 +42,9 @@ const Job = ({ job }) => {
                         onClose={handleClose}
                         aria-labelledby="modal-modal-title"
                         aria-describedby="modal-modal-description"
+                        data-cy = "modal"
                     >
-                        <Box sx={style}>
+                        <Box sx={style} data-cy = "jobInfo">
                             {/* {Object.entries(job).map(([key, value]) => {
                                 return (
                                     <div>

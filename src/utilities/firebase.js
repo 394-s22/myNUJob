@@ -1,7 +1,8 @@
 import { initializeApp } from 'firebase/app';
 import { getDatabase, connectDatabaseEmulator, onValue, ref, set } from 'firebase/database';
 import { useState, useEffect } from 'react';
-import { GoogleAuthProvider } from "firebase/auth";
+import { getAuth, GoogleAuthProvider, signInWithCredential, connectAuthEmulator } from "firebase/auth";
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyD7UQB82McTzvzjMjKcUxH_qkQPb1mfOMk",
@@ -15,7 +16,18 @@ const firebaseConfig = {
 };
 
 const firebase = initializeApp(firebaseConfig);
+const auth = getAuth(firebase);
 const database = getDatabase(firebase);
+
+var db;
+if (process.env.REACT_APP_EMULATE) {
+  connectAuthEmulator(auth, "http://127.0.0.1:9099");
+  connectDatabaseEmulator(db, "127.0.0.1", 9000);
+
+  signInWithCredential(auth, GoogleAuthProvider.credential(
+    '{"sub": "qEvli4msW0eDz5mSVO6j3W7i8w1k", "email": "tester@gmail.com", "displayName":"Test User", "email_verified": true}'
+  ));
+}
 
 
 export const useData = (path, transform) => {
