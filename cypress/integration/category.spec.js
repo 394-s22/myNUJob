@@ -1,11 +1,8 @@
 describe ('Test App', () => {
-    it ('contain category', () => {
-        cy.visit ('/');
-        cy.get('[data-cy=categoryOptions]').should('contain', 'Administrative');
-    });
 
     it ('doesn not contain category', () => {
         cy.visit ('/');
-        cy.get('[data-cy=categoryOptions]').should('contain', 'Swim');
+        cy.get('[data-cy=categoryClick]').click( {multiple: true});
+        cy.get('[data-cy=job]').should('contain' ,'Administrative Aide');
     });
 });

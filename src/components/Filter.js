@@ -6,7 +6,7 @@ const toggle = (x, lst) =>
 
 const Filter = ({ filterCategories, setFilterCategories, value }) => {
   return (
-    <div className='filter' data-cy = "categoryOptions">
+    <div className='filter' data-cy = "categoryClick">
       <input className="form-check-input" type="checkbox" value={value}
         onChange={e => setFilterCategories(toggle(e.target.value, filterCategories))} />
       <label className="form-check-label" for="flexCheckDefault">
