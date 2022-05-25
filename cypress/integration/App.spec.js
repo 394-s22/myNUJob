@@ -8,8 +8,7 @@ describe ('Test App', () => {
 
     it ('opens with jobs', () => {
         cy.visit ('/');
-        cy.get('[data-cy=job]');
-        // .should('contain', 'Fall CS');
+        cy.get('[data-cy=job]').should('contain', 'Fall CS');
       });
   
   });

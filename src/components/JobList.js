@@ -27,7 +27,7 @@ const JobList = ({ jobs, filterCategories, sortDirection }) => {
   // console.log(jobs[0].TITLE);
 
   return (
-    <ul className="cards">
+    <ul className="cards"  data-cy = "job">
       
       {filterCategories.length === 0 ?
         Object.values(jobs).map((j) =>

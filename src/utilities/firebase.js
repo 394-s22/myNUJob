@@ -17,9 +17,6 @@ const firebaseConfig = {
 const firebase = initializeApp(firebaseConfig);
 const database = getDatabase(firebase);
 
-if (window.Cypress) {
-  connectDatabaseEmulator(database, "127.0.0.1", 9000);
-}
 
 export const useData = (path, transform) => {
   const [data, setData] = useState();
