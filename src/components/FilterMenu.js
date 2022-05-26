@@ -25,7 +25,7 @@ const FilterMenu = ({jobCategories, filterCategories, setFilterCategories, sortD
           key={category} />
       )}
       <div className="sort-bar">
-					<SortBar sortDirection={sortDirection} setSortDirection={setSortDirection} />
+					<SortBar sortDirection={sortDirection} setSortDirection={setSortDirection} dataCy="sort-bar"/>
 			</div>
     </div>
   )

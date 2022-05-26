@@ -30,10 +30,10 @@ const JobList = ({ jobs, filterCategories, sortDirection }) => {
     <ul className="cards"  data-cy = "job" >
       
       {filterCategories.length === 0 ?
-        Object.values(jobs).map((j) =>
-          <Job job={j} key={j.ID} />) :
-        jobs.filter(j => filterCategories.includes(j.CATEGORY)).map((j) =>
-          <Job job={j} key={j.ID} />)
+        Object.values(jobs).map((j, idx) =>
+          <Job job={j} key={j.ID} dataCy={`job-${idx}`}/>) :
+        jobs.filter(j => filterCategories.includes(j.CATEGORY)).map((j, idx) =>
+          <Job job={j} key={j.ID} dataCy={`job-${idx}`} />)
       }
     </ul>
   )

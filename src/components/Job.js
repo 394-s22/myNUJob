@@ -23,7 +23,7 @@ const style = {
 
 };
 
-const Job = ({ job }) => {
+const Job = ({ job, dataCy }) => {
 
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
@@ -31,7 +31,7 @@ const Job = ({ job }) => {
 
     return (
         <div className='container-fluid' >
-            <div className="card">
+            <div className="card" data-cy={dataCy}>
                 <div className="card-title"> {job.TITLE.substring(job.TITLE.indexOf(":")+1)}
                     <button className='apply-button'
                         onClick={handleOpen}>

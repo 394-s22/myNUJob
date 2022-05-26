@@ -31,7 +31,7 @@ const App = () => {
 						<FilterMenu jobCategories={jobCategories} filterCategories={filterCategories} setFilterCategories={setFilterCategories} sortDirection={sortDirection} setSortDirection={setSortDirection} />
 					</div>
 					<div className="cards-list">
-						<JobList jobs={jobList} filterCategories={filterCategories} sortDirection={sortDirection} />
+						<JobList jobs={jobList} filterCategories={filterCategories} sortDirection={sortDirection} data-cy='job-list'/>
 					</div>
 				</div>
 			</div>

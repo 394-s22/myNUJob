@@ -12,7 +12,7 @@ import '../styles/SortBar.css'
 //   }
 // }));
 
-const SortBar = ({ sortDirection, setSortDirection }) => {
+const SortBar = ({ sortDirection, setSortDirection, dataCy }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = anchorEl;
   // const classes = useStyles()
@@ -37,6 +37,7 @@ const SortBar = ({ sortDirection, setSortDirection }) => {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
+        data-Cy={dataCy}
       >
         Sort by
       </Button>
@@ -50,9 +51,9 @@ const SortBar = ({ sortDirection, setSortDirection }) => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Increasing Wage</MenuItem>
-        <MenuItem onClick={handleClose}>Decreasing Wage</MenuItem>
-        <MenuItem onClick={handleClose}>Alphabetical Order</MenuItem>
+        <MenuItem onClick={handleClose} data-cy='increasing-wage-button'>Increasing Wage</MenuItem>
+        <MenuItem onClick={handleClose} data-cy='decreasing-wage-button'>Decreasing Wage</MenuItem>
+        <MenuItem onClick={handleClose} data-cy='alphabetical-order-button'>Alphabetical Order</MenuItem>
       </Menu>
     </div>
   )
