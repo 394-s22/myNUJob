@@ -4,6 +4,12 @@ import "@testing-library/jest-dom/extend-expect";
 import App from "./App";
 import { useData } from "./utilities/firebase.js";
 
+// test("title with real data", async () => {
+//   render(<App />);
+//   const title = await screen.findByText(/my/i);
+//   expect(title).toBeInTheDocument();
+// });
+
 jest.mock("./utilities/firebase.js");
 
 const mockJobSchedule = [
@@ -28,7 +34,7 @@ const mockJobSchedule = [
   },
 ];
 
-test("title", () => {
+test("title with mock data", () => {
   useData.mockReturnValue([mockJobSchedule, false, null]);
   //useUserState.mockReturnValue([null]);
   render(<App />);
