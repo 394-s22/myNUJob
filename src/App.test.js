@@ -41,3 +41,25 @@ test("title with mock data", () => {
   const title = screen.getByText(/NU/i);
   expect(title).toBeInTheDocument();
 });
+
+// Jordan's Test
+test("mock job is rendered", () => {
+  useData.mockReturnValue([mockJobSchedule, false, null]);
+  render(<App />);
+  const job = screen.getByText(/Newsletter Creation/i);
+  expect(job).toBeInTheDocument();
+});
+
+// Jordan's Test
+// test("mock job is filtered out", () => {
+//   useData.mockReturnValue([mockJobSchedule, false, null]);
+//   render(<App />);
+
+//   const job = screen.getByText(/Newsletter Creation/i);
+//   const sortByMenu = screen.findByText(/Sort By/i);
+//   const mockCallBack = jest.fn();
+//   const button = shallow((<SortBar onClick={mockCallBack}>Sort By</SortBar>));
+
+  
+//   expect(job).toBeInTheDocument();
+// });
