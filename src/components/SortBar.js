@@ -13,7 +13,7 @@ import '../styles/SortBar.css'
 // }));
 
 const SortBar = ({ sortDirection, setSortDirection }) => {
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorEl, setAnchorEl] = useState(false);
   const open = anchorEl;
   // const classes = useStyles()
 

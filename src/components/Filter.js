@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Filter.css'
 
-const toggle = (x, lst) => 
+const toggle = (x, lst) =>
   lst.includes(x) ? lst.filter(y => y !== x) : [x, ...lst];
 
 const Filter = ({ filterCategories, setFilterCategories, value }) => {
@@ -9,7 +9,7 @@ const Filter = ({ filterCategories, setFilterCategories, value }) => {
     <div className='filter'>
       <input className="form-check-input" type="checkbox" value={value}
         onChange={e => setFilterCategories(toggle(e.target.value, filterCategories))} />
-      <label className="form-check-label" for="flexCheckDefault">
+      <label className="form-check-label" htmlFor="flexCheckDefault">
         {value}
       </label>
     </div>
