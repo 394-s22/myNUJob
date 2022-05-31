@@ -1,8 +1,9 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import "@testing-library/jest-dom/extend-expect";
 import App from "./App";
 import { useData } from "./utilities/firebase.js";
+import SortBar from "./components/SortBar";
 
 // test("title with real data", async () => {
 //   render(<App />);
@@ -49,17 +50,3 @@ test("mock job is rendered", () => {
   const job = screen.getByText(/Newsletter Creation/i);
   expect(job).toBeInTheDocument();
 });
-
-// Jordan's Test
-// test("mock job is filtered out", () => {
-//   useData.mockReturnValue([mockJobSchedule, false, null]);
-//   render(<App />);
-
-//   const job = screen.getByText(/Newsletter Creation/i);
-//   const sortByMenu = screen.findByText(/Sort By/i);
-//   const mockCallBack = jest.fn();
-//   const button = shallow((<SortBar onClick={mockCallBack}>Sort By</SortBar>));
-
-  
-//   expect(job).toBeInTheDocument();
-// });

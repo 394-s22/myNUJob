@@ -14,7 +14,7 @@ const FilterMenu = ({jobCategories, filterCategories, setFilterCategories, sortD
   jobCategories.sort();
 
   return (
-    <div className='filter-menu'> 
+    <div className='filter-menu'>
       <h2>Filters</h2>
       <h4>Category</h4>
       {jobCategories.map((category) =>
@@ -22,7 +22,8 @@ const FilterMenu = ({jobCategories, filterCategories, setFilterCategories, sortD
           filterCategories={filterCategories}
           setFilterCategories={setFilterCategories}
           value={category}
-          key={category} />
+          key={category} 
+          dataTestID = {`filterby-${category.toLowerCase()}`} />
       )}
       <div className="sort-bar">
 					<SortBar sortDirection={sortDirection} setSortDirection={setSortDirection} />
