@@ -50,14 +50,6 @@ test("mock job is rendered", () => {
   expect(job).toBeInTheDocument();
 });
 
-// Roy's Test
-test("button for mock job is rendered", () => {
-  useData.mockReturnValue([mockJobSchedule, false, null])
-  render(<App />);
-  const button = screen.getByText(/More Info/i);
-  expect(button).toBeInTheDocument();
-})
-
 // Jordan's Test
 // test("mock job is filtered out", () => {
 //   useData.mockReturnValue([mockJobSchedule, false, null]);
