@@ -14,11 +14,11 @@ const JobList = ({ jobs, filterCategories, sortDirection }) => {
       break;
 
     case "Alphabetical Order":
-      jobs.sort((a, b) => { return a.TITLE.substring(a.TITLE.indexOf(":")+1).localeCompare(b.TITLE.substring(b.TITLE.indexOf(":")+1)); });
+      jobs.sort((a, b) => { return a.TITLE.substring(a.TITLE.indexOf(":") + 1).localeCompare(b.TITLE.substring(b.TITLE.indexOf(":") + 1)); });
       break;
 
     default:
-      jobs.sort((a, b) => { return a.TITLE.substring(a.TITLE.indexOf(":")+1).localeCompare(b.TITLE.substring(b.TITLE.indexOf(":")+1)); });
+      jobs.sort((a, b) => { return a.TITLE.substring(a.TITLE.indexOf(":") + 1).localeCompare(b.TITLE.substring(b.TITLE.indexOf(":") + 1)); });
       break;
   }
 
@@ -27,11 +27,11 @@ const JobList = ({ jobs, filterCategories, sortDirection }) => {
   // console.log(jobs[0].TITLE);
 
   return (
-    <ul className="cards"  data-cy = "job" >
-      
+    <ul className="cards" data-cy="job" >
+
       {filterCategories.length === 0 ?
         Object.values(jobs).map((j, idx) =>
-          <Job job={j} key={j.ID} dataCy={`job-${idx}`}/>) :
+          <Job job={j} key={j.ID} dataCy={`job-${idx}`} />) :
         jobs.filter(j => filterCategories.includes(j.CATEGORY)).map((j, idx) =>
           <Job job={j} key={j.ID} dataCy={`job-${idx}`} />)
       }

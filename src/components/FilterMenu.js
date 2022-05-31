@@ -9,24 +9,25 @@ import SortBar from './SortBar.js';
 // wage
 // work arrangements
 
-const FilterMenu = ({jobCategories, filterCategories, setFilterCategories, sortDirection, setSortDirection}) => {
-  
+const FilterMenu = ({ jobCategories, filterCategories, setFilterCategories, sortDirection, setSortDirection }) => {
+
   jobCategories.sort();
 
   return (
-    <div className='filter-menu'> 
+    <div className='filter-menu'>
       <h2>Filters</h2>
       <h4>Category</h4>
-      {jobCategories.map((category) =>
+      {jobCategories.map((category, idx) =>
         <Filter
           filterCategories={filterCategories}
           setFilterCategories={setFilterCategories}
           value={category}
-          key={category} />
+          key={category}
+          dataCy={`categoryClick-${idx}`} />
       )}
       <div className="sort-bar">
-					<SortBar sortDirection={sortDirection} setSortDirection={setSortDirection} dataCy="sort-bar"/>
-			</div>
+        <SortBar sortDirection={sortDirection} setSortDirection={setSortDirection} dataCy="sort-bar" />
+      </div>
     </div>
   )
 }
