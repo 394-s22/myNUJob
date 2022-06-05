@@ -53,10 +53,10 @@ test("job list sort descending", () => {
   render(<App />);
 
   const button = screen.getByText(/Sort by/i);
-  userEvent.click(button);
+  fireEvent.click(button);
 
   const descendButton = screen.getByText(/Decreasing Wage/i);
-  userEvent.click(descendButton);
+  fireEvent.click(descendButton);
 
   const job = screen.getByText(/Newsletter Creation/i);
   const jobs = screen.getAllByText(/Northwestern - Evanston Campus/i);
@@ -71,10 +71,10 @@ test("job list sort ascending", () => {
   render(<App />);
 
   const button = screen.getByText(/Sort by/i);
-  userEvent.click(button);
+  fireEvent.click(button);
 
   const ascendButton = screen.getByText(/Decreasing Wage/i);
-  userEvent.click(ascendButton);
+  fireEvent.click(ascendButton);
 
   const job = screen.getByText(/Event Aide/i);
   const jobs = screen.getAllByText(/Northwestern - Evanston Campus/i);
