@@ -91,8 +91,9 @@ test("job list sort alphabetically", () => {
     const abcButton = screen.getByText(/Alphabetical Order/i);
     userEvent.click(abcButton);
 
-    const job = screen.getByText(/Administrative Aide/i);
+    const job = screen.getByText(/Event Aide/i);
     const jobs = screen.getAllByText(/Northwestern - Evanston Campus/i)
-
+    
+    expect(jobs).toHaveLength(2)
     expect(jobs[0]).toEqual(job)
 });
