@@ -79,3 +79,20 @@ test("job list sort ascending", () => {
     expect(jobs).toHaveLength(2)
     expect(jobs[0]).toEqual(job)
 });
+
+// Bobo's test
+test("job list sort alphabetically", () => {
+    useData.mockReturnValue([mockJobSchedule, false, null]);
+    render(<App />);
+
+    const button = screen.getByText(/Sort by/i);
+    userEvent.click(button);
+
+    const abcButton = screen.getByText(/Alphabetical Order/i);
+    userEvent.click(abcButton);
+
+    const job = screen.getByText(/Administrative Aide/i);
+    const jobs = screen.getAllByText(/Northwestern - Evanston Campus/i)
+
+    expect(jobs[0]).toEqual(job)
+});
