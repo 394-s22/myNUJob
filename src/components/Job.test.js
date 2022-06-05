@@ -1,9 +1,10 @@
 import { render, screen } from "@testing-library/react";
 // import userEvent from "@testing-library/user-event";
 import "@testing-library/jest-dom/extend-expect";
-// import App from "./App";
+import App from "./App";
 import Job from "./Job";
 import { useData } from "../utilities/firebase.js";
+import userEvent from "@testing-library/user-event";
 
 jest.mock("../utilities/firebase.js");
 
@@ -36,3 +37,22 @@ test("button for mock job is rendered", () => {
     const button = screen.getByText(/More Info/i);
     expect(button).toBeInTheDocument();
 })
+
+// Grace W's Test
+test("clicking outside dialog takes you back to main page", () => {
+    useData.mockReturnValue([mockJobSchedule, false, null])
+    render(<Job job={mockJobSchedule[0]} />);
+
+    // click more info
+    const button = screen.getByText(/More Info/i);
+    userEvent.click(button);
+
+    // then click outside dialog
+    userEvent.click(window)
+
+    // ensure we are back 
+    const buttonBack = screen.getByText(/More Info/i);
+    expect(buttonBack).toBeInTheDocument();
+
+})
+
