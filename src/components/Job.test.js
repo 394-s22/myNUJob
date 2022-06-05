@@ -1,5 +1,4 @@
-import { render, screen, window } from "@testing-library/react";
-// import userEvent from "@testing-library/user-event";
+import { render, screen, window, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import App from "../App";
 import Job from "./Job";
@@ -45,10 +44,10 @@ test("clicking outside dialog takes you back to main page", () => {
 
   // click more info
   const button = screen.getByText(/More Info/i);
-  userEvent.click(button);
+  fireEvent.click(button);
 
   // then click outside dialog
-  userEvent.click(window);
+  fireEvent.click(window);
 
   // ensure we are back
   const buttonBack = screen.getByText(/More Info/i);
