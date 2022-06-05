@@ -56,3 +56,15 @@ test("mock job is filtered out", () => {
   fireEvent.click(filterByTechnicalButton);
   expect(job).not.toBeInTheDocument();
 });
+
+// Bobo's Test
+test("filter by technical", () => {
+  useData.mockReturnValue([mockJobSchedule, false, null]);
+  render(<App />);
+  const job = screen.getByText(/Technical Staff/i);
+  expect(job).toBeInTheDocument();
+
+  const filterByTechnicalButton = screen.getByTestId('filterby-technical');
+  fireEvent.click(filterByTechnicalButton);
+  expect(job).toBeInTheDocument();
+});
