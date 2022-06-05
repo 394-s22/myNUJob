@@ -23,6 +23,7 @@ const FilterMenu = ({
       <h4>Category</h4>
       {jobCategories.map((category) => (
         <Filter
+          role="filter"
           filterCategories={filterCategories}
           setFilterCategories={setFilterCategories}
           value={category}

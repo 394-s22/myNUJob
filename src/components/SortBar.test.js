@@ -100,3 +100,4 @@ test("job list sort alphabetically", () => {
   expect(jobs).toHaveLength(2);
   expect(jobs[0]).toEqual(job);
 });
+

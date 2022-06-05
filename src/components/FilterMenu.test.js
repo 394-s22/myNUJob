@@ -116,3 +116,32 @@ test("filter by technical and athletics", () => {
   expect(athleticsJob).toBeInTheDocument();
   expect(filteredTechJob).toBeInTheDocument();
 });
+
+// Roy's Test
+test("selecting all filters shows all jobs (filteres are inclusive)", () => {
+  useData.mockReturnValue([mockJobSchedule, false, null]);
+  render(<App />);
+  // check that all three jobs from mock data are rendered
+  const adminJob = screen.getByText(/Newsletter Creation/i);
+  const techJob = screen.getByText(/Technical Staff/i);
+  const athleticsJob = screen.getByText(/Football Video Assistant/i);
+  expect(adminJob).toBeInTheDocument();
+  expect(techJob).toBeInTheDocument();
+  expect(athleticsJob).toBeInTheDocument();
+
+  const filterByAdminButton = screen.getByTestId("filterby-administrative");
+  const filterByTechButton = screen.getByTestId('filterby-technical');
+  const filterByAthleticsButton = screen.getByTestId('filterby-athletics-and-recreation');
+
+  userEvent.click(filterByAdminButton);
+  userEvent.click(filterByTechButton);
+  userEvent.click(filterByAthleticsButton);
+
+  const filtered_adminJob = screen.getByText(/Newsletter Creation/i);
+  const filtered_techJob = screen.getByText(/Technical Staff/i);
+  const filtered_athleticsJob = screen.getByText(/Football Video Assistant/i);
+  expect(filtered_adminJob).toBeInTheDocument();
+  expect(filtered_techJob).toBeInTheDocument();
+  expect(filtered_athleticsJob).toBeInTheDocument();
+
+});
