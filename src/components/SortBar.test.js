@@ -55,7 +55,7 @@ test("sort options display when sort button is clicked", () => {
   const sortButton = screen.getByText(/Sort by/i);
   userEvent.click(sortButton);
 
-  
+
   expect(screen.getByText(/Increasing Wage/i)).toBeTruthy();
   expect(screen.getByText(/Decreasing Wage/i)).toBeTruthy();
   expect(screen.getByText(/Alphabetical Order/i)).toBeTruthy();
@@ -78,4 +78,15 @@ test("sort options display when sort button is clicked", () => {
 //   expect(jobs).toHaveLength(2);
 //   expect(jobs[0]).toEqual(job);
 // });
+
+// Brando's Test
+test("jobs sorted alphabetically by default", () => {
+  useData.mockReturnValue([mockJobSchedule, false, null]);
+  render(<App />);
+
+  const jobs = screen.getAllByTestId('job');
+  expect(jobs).toHaveLength(2);
+  expect(jobs[0]).toHaveTextContent(/Event Aide/);
+  expect(jobs[1]).toHaveTextContent(/Newsletter Creation/);
+});
 

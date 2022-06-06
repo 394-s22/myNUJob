@@ -30,9 +30,9 @@ const Job = ({ job }) => {
     const handleClose = () => setOpen(false);
 
     return (
-        <div className='container-fluid' >
-            <div className="card" data-testid={`job-${job.TITLE.substring(job.TITLE.indexOf(":")+1)}`}>
-                <div className="card-title"> {job.TITLE.substring(job.TITLE.indexOf(":")+1)}
+        <div className='container-fluid' data-testid='job'>
+            <div className="card" data-testid={`job-${job.TITLE.substring(job.TITLE.indexOf(":") + 1)}`}>
+                <div className="card-title"> {job.TITLE.substring(job.TITLE.indexOf(":") + 1)}
                     <button className='apply-button'
                         onClick={handleOpen}>
                         <b>More Info</b>
@@ -50,7 +50,7 @@ const Job = ({ job }) => {
                                     <div>
                                         {key}:{value}
                                     </div>)})} */}
-                            <h2>{job.TITLE.substring(job.TITLE.indexOf(":")+1)}</h2>
+                            <h2>{job.TITLE.substring(job.TITLE.indexOf(":") + 1)}</h2>
                             <div><b>JOB DESCRIPTION:</b> {job["JOB DESCRIPTION"]}</div>
                             <div><b>QUALIFICATIONS:</b> {job["QUALIFICATIONS"]}</div>
                             <div><b>TERM AVAILABLE:</b> {job["TERM AVAILABLE"]}</div>

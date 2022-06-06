@@ -145,3 +145,38 @@ test("selecting all filters shows all jobs (filteres are inclusive)", () => {
   expect(filtered_athleticsJob).toBeInTheDocument();
 
 });
+
+// Brando's Test
+test("filter by administrative and athletics", () => {
+  useData.mockReturnValue([mockJobSchedule, false, null]);
+  render(<App />);
+
+  // All jobs display by default
+  const adminJob = screen.getByText(/Newsletter Creation/i);
+  const techJob = screen.getByText(/Technical Staff/i);
+  const athleticsJob = screen.getByText(/Football Video Assistant/i);
+  expect(adminJob).toBeInTheDocument();
+  expect(techJob).toBeInTheDocument();
+  expect(athleticsJob).toBeInTheDocument();
+
+  // Filter by Athletics
+  const filterByAthleticsButton = screen.getByTestId(
+    "filterby-athletics-and-recreation"
+  );
+  userEvent.click(filterByAthleticsButton);
+
+  // Filter by Administrative
+  const filterByAdministrativeButton = screen.getByTestId(
+    "filterby-administrative"
+  );
+  userEvent.click(filterByAdministrativeButton);
+
+  // Subsequent filter clicks mess up jest keeping
+  // track of objects not in first filter because they disappear
+  const filtered_adminJob = screen.getByText(/Newsletter Creation/i);
+
+  // Admin and Athletics jobs present, tech job is not
+  expect(filtered_adminJob).toBeInTheDocument();
+  expect(techJob).not.toBeInTheDocument();
+  expect(athleticsJob).toBeInTheDocument();
+});
