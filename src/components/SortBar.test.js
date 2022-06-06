@@ -90,3 +90,26 @@ test("jobs sorted alphabetically by default", () => {
   expect(jobs[1]).toHaveTextContent(/Newsletter Creation/);
 });
 
+
+// Arhan's Test #2
+test("sort jobs by decreasing wage", () => {
+  useData.mockReturnValue([mockJobSchedule, false, null]);
+  render(<App />);
+
+  
+  const sortButton = screen.getByText(/Sort by/i);
+  userEvent.click(sortButton);
+
+  expect(screen.getByText(/Decreasing Wage/i)).toBeTruthy();
+  expect(screen.getByText(/Alphabetical Order/i)).toBeTruthy();
+
+  const decreasingWageButton = screen.getByText(/Decreasing Wage/i);
+  userEvent.click(decreasingWageButton);
+
+  const jobs = screen.getAllByTestId('job');
+  expect(jobs[0]).toHaveTextContent(/Newsletter Creation/);
+
+
+});
+
+
