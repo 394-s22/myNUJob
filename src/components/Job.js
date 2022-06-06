@@ -42,7 +42,7 @@ const Job = ({ job }) => {
                         onClose={handleClose}
                         aria-labelledby="modal-modal-title"
                         aria-describedby="modal-modal-description"
-                        dataTestID="mui-modal"
+                        data-testid="mui-modal"
                     >
                         <Box sx={style}>
                             {/* {Object.entries(job).map(([key, value]) => {

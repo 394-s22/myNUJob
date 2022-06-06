@@ -46,15 +46,16 @@ test("clicking outside dialog takes you back to main page", () => {
   const button = screen.getByText(/More Info/i);
   fireEvent.click(button);
 
+  const modalScreen = document.querySelector("[data-testid=mui-modal]");
+  expect(modalScreen).toBeInTheDocument();
+
   // then click outside dialog
-  fireEvent.click(window);
+  fireEvent.mouseDown(document.body);
 
   // ensure we are back
   const buttonBack = screen.getByText(/More Info/i);
   expect(buttonBack).toBeInTheDocument();
 
-  const modalScreen = screen.getByTestId("mui-modal");
-  expect(modalScreen).not.toBeInTheDocument();
 });
 
 // Grace L's Test
