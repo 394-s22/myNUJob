@@ -37,6 +37,7 @@ const SortBar = ({ sortDirection, setSortDirection }) => {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
+        data-testid="action"
       >
         Sort by
       </Button>
@@ -50,9 +51,9 @@ const SortBar = ({ sortDirection, setSortDirection }) => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Increasing Wage</MenuItem>
-        <MenuItem onClick={handleClose}>Decreasing Wage</MenuItem>
-        <MenuItem onClick={handleClose}>Alphabetical Order</MenuItem>
+        <MenuItem onClick={handleClose} data-testid="action-increasing">Increasing Wage</MenuItem>
+        <MenuItem onClick={handleClose} data-testid="action-decreasing">Decreasing Wage</MenuItem>
+        <MenuItem onClick={handleClose} data-testid="action-alphabetical">Alphabetical Order</MenuItem>
       </Menu>
     </div>
   )

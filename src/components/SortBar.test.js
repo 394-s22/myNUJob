@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { fireEvent, waitForElement, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import "@testing-library/jest-dom/extend-expect";
 import App from "../App";
@@ -48,39 +48,17 @@ const mockJobSchedule = [
 ];
 
 // Grace W's test
-test("job list sort descending", () => {
+test("sort options display when sort button is clicked", () => {
   useData.mockReturnValue([mockJobSchedule, false, null]);
   render(<App />);
 
-  const button = screen.getByText(/Sort by/i);
-  fireEvent.click(button);
+  const sortButton = screen.getByText(/Sort by/i);
+  userEvent.click(sortButton);
 
-  const descendButton = screen.getByText(/Decreasing Wage/i);
-  fireEvent.click(descendButton);
-
-  const job = screen.getByText(/Newsletter Creation/i);
-  const jobs = screen.getAllByText(/Northwestern - Evanston Campus/i);
-
-  expect(jobs).toHaveLength(2);
-  expect(jobs[0]).toEqual(job);
-});
-
-// Grace W's test
-test("job list sort ascending", () => {
-  useData.mockReturnValue([mockJobSchedule, false, null]);
-  render(<App />);
-
-  const button = screen.getByText(/Sort by/i);
-  fireEvent.click(button);
-
-  const ascendButton = screen.getByText(/Decreasing Wage/i);
-  fireEvent.click(ascendButton);
-
-  const job = screen.getByText(/Event Aide/i);
-  const jobs = screen.getAllByText(/Northwestern - Evanston Campus/i);
-
-  expect(jobs).toHaveLength(2);
-  expect(jobs[0]).toEqual(job);
+  
+  expect(screen.getByText(/Increasing Wage/i)).toBeTruthy();
+  expect(screen.getByText(/Decreasing Wage/i)).toBeTruthy();
+  expect(screen.getByText(/Alphabetical Order/i)).toBeTruthy();
 });
 
 // Bobo's test

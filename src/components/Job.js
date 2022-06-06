@@ -31,7 +31,7 @@ const Job = ({ job }) => {
 
     return (
         <div className='container-fluid' >
-            <div className="card">
+            <div className="card" data-testid={`job-${job.TITLE.substring(job.TITLE.indexOf(":")+1)}`}>
                 <div className="card-title"> {job.TITLE.substring(job.TITLE.indexOf(":")+1)}
                     <button className='apply-button'
                         onClick={handleOpen}>
