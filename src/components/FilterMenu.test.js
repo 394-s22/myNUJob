@@ -180,3 +180,39 @@ test("filter by administrative and athletics", () => {
   expect(techJob).not.toBeInTheDocument();
   expect(athleticsJob).toBeInTheDocument();
 });
+
+
+//Arhan's test #1
+test("filter by other", () => {
+  useData.mockReturnValue([mockJobSchedule, false, null]);
+  render(<App />);
+
+  // All jobs display by default
+  const adminJob = screen.getByText(/Newsletter Creation/i);
+  const techJob = screen.getByText(/Technical Staff/i);
+  const athleticsJob = screen.getByText(/Football Video Assistant/i);
+  expect(adminJob).toBeInTheDocument();
+  expect(techJob).toBeInTheDocument();
+  expect(athleticsJob).toBeInTheDocument();
+
+  //checking an other job
+  const otherJob = screen.getByText(/Copy Editor/i);
+
+
+  // Filter by Other
+  const filterByOther = screen.getByTestId(
+    "filterby-other"
+  );
+  userEvent.click(filterByOther);
+
+  expect(filtered_adminJob).not.toBeInTheDocument();
+  expect(techJob).not.toBeInTheDocument();
+  expect(athleticsJob).not.toBeInTheDocument();
+
+  expect(otherJob).toBeInTheDocument();
+
+
+});
+
+
+
