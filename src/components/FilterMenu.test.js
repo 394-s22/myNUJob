@@ -65,6 +65,22 @@ const mockJobSchedule = [
     URL: "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/athletics-and-recreation-football-video-assistant.html",
     CATEGORY: "Athletics-and-Recreation",
   },
+  {
+    "TERM AVAILABLE": "Spring 2022",
+    "NUMBER OF POSITIONS AVAILABLE": "2",
+    LOCATION: "Northwestern - Evanston Campus",
+    "WORK ARRANGEMENTS": "In-Person",
+    DEPARTMENT: "Plant Biology and Conservation",
+    "JOB DESCRIPTION": "Contribute to conservation, ecology, and evolutionary biology research on prairie plants and insects. Working in our lab, you will gain hands-on experience in population biology research using techniques, equipment, and tools for seed and plant biology. Students interested in conducting statistical analyses or mathematical modeling are welcome to apply. Read more at http://echinaceaproject.org/opportunities/",
+    QUALIFICATIONS: "Must be a Northwestern undergraduate student with a Federal Work-Study allotment for the 2021-2022 academic year (CAESAR > Financial Aid > View My Financial Aid > [YEAR].)\nPrevious research experience is not necessary, but an interest in biology, plants, and conservation is desired. Working with seeds requires attention to detail and good hand-eye coordination. Lab work occurs at the Chicago Botanic Garden and at Northwestern, Evanston campus.",
+    "PAY RATE": [15.0],
+    "CONTACT NAME": "Stuart Wagenius",
+    "CONTACT EMAIL": "s-wagenius@northwestern.edu",
+    TITLE: "Plant Biology and Conservation: Conservation Science Research Assistant",
+    ID: 53,
+    URL: "https://undergradaid.northwestern.edu/work-study/jobs/on-campus-jobs/plant-biology-and-conservation-conservation-science-research-assistant.html",
+    CATEGORY: "Research"
+  }
 ];
 
 // Jordan's Test
@@ -183,7 +199,7 @@ test("filter by administrative and athletics", () => {
 
 
 //Arhan's test #1
-test("filter by other", () => {
+test("filter by research", () => {
   useData.mockReturnValue([mockJobSchedule, false, null]);
   render(<App />);
 
@@ -191,25 +207,22 @@ test("filter by other", () => {
   const adminJob = screen.getByText(/Newsletter Creation/i);
   const techJob = screen.getByText(/Technical Staff/i);
   const athleticsJob = screen.getByText(/Football Video Assistant/i);
+  const researchJob = screen.getByText(/Conservation Science Research Assistant/i);
+
   expect(adminJob).toBeInTheDocument();
   expect(techJob).toBeInTheDocument();
   expect(athleticsJob).toBeInTheDocument();
-
-  //checking an other job
-  const otherJob = screen.getByText(/Copy Editor/i);
+  expect(researchJob).toBeInTheDocument();
 
 
   // Filter by Other
-  const filterByOther = screen.getByTestId(
-    "filterby-other"
-  );
-  userEvent.click(filterByOther);
+  const filterByResearch = screen.getByTestId("filterby-research");
+  userEvent.click(filterByResearch);
 
-  expect(filtered_adminJob).not.toBeInTheDocument();
+
   expect(techJob).not.toBeInTheDocument();
   expect(athleticsJob).not.toBeInTheDocument();
-
-  expect(otherJob).toBeInTheDocument();
+  expect(researchJob).toBeInTheDocument();
 
 
 });
