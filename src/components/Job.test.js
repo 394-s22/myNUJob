@@ -81,3 +81,16 @@ test("location on job card", () => {
   expect(location).toBeInTheDocument();
 
 });
+
+
+
+//Arhan's test #2
+test("DEPARTMENT on job card", () => {
+  useData.mockReturnValue([mockJobSchedule, false, null]);
+  render(<Job job={mockJobSchedule[0]} />);
+
+  //check that term exists
+  const dept = screen.getByText(/American Studies/i);
+  expect(dept).toBeInTheDocument();
+
+});
