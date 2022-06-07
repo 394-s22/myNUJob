@@ -82,7 +82,18 @@ test("location on job card", () => {
 
 });
 
+// Bobo's test
+test("job description is shown in modal", () => {
+  useData.mockReturnValue([mockJobSchedule, false, null]);
+  render(<Job job={mockJobSchedule[0]} />);
 
+  // click more info
+  const button = screen.getByText(/More Info/i);
+  userEvent.click(button);
+
+  const description = screen.getByText(/Julie Lavin/i);
+  expect(description).toBeInTheDocument();
+});
 
 //Arhan's test #2
 test("DEPARTMENT on job card", () => {
