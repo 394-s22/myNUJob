@@ -70,14 +70,3 @@ test("find contact name", () => {
   const contactName = screen.getByText(/Julie Lavin/i);
   expect(contactName).toBeInTheDocument();
 });
-
-// Jaz's Test
-test("location on job card", () => {
-  useData.mockReturnValue([mockJobSchedule, false, null]);
-  render(<Job job={mockJobSchedule[0]} />);
-
-  //check that term exists
-  const location = screen.getByText(/Northwestern - Evanston Campus/i);
-  expect(location).toBeInTheDocument();
-
-});

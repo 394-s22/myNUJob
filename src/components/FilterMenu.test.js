@@ -225,50 +225,7 @@ test("filter by research", () => {
   expect(researchJob).toBeInTheDocument();
 
 
-
 });
-
-test("filter and unfilter", () => {
-  useData.mockReturnValue([mockJobSchedule, false, null]);
-  render(<App />);
-
-
-  const adminJob = screen.getByText(/Newsletter Creation/i);
-  const techJob = screen.getByText(/Technical Staff/i);
-  const athleticsJob = screen.getByText(/Football Video Assistant/i);
-  const researchJob = screen.getByText(/Conservation Science Research Assistant/i);
-
-
-  // admin and tech
-  const filterAdmin = screen.getByTestId("filterby-administrative");
-  fireEvent.click(filterAdmin);
-  const filterTech = screen.getByTestId("filterby-technical");
-  fireEvent.click(filterTech);
-  expect(adminJob).toBeInTheDocument();
-  expect(techJob).toBeInTheDocument();
-  expect(athleticsJob).not.toBeInTheDocument();
-
-  //unfilter admin (only tech)
-  userEvent.click(filterAdmin);
-  expect(adminJob).not.toBeInTheDocument();
-  expect(researchJob).not.toBeInTheDocument();
-  expect(techJob).toBeInTheDocument();
-  expect(athleticsJob).not.toBeInTheDocument();
-
-
-  
-
-
-
-
-
-
-
-
-});
-
-
-
 
 
 
