@@ -56,14 +56,17 @@ async def scrape1():
             link = await nth.locator('a').get_attribute("href")
             # links_list.append({"text": text, "link": page.url + link})
             sub_page = await context.new_page()
-            await sub_page.goto(page.url + link)
-            # await sub_page.wait_for_timeout(1000)
-            job_title, job_info = await scrape2(sub_page, id_num=i)
-            job_info['CATEGORY'] = category
-            if job_title in jobs_dict.keys():
-                jobs_dict[job_title] = jobs_dict[job_title] + [job_info]
-            else:
-                jobs_dict[job_title] = [job_info]
+            try:
+                await sub_page.goto(page.url + link)
+                # await sub_page.wait_for_timeout(1000)
+                job_title, job_info = await scrape2(sub_page, id_num=i)
+                job_info['CATEGORY'] = category
+                if job_title in jobs_dict.keys():
+                    jobs_dict[job_title] = jobs_dict[job_title] + [job_info]
+                else:
+                    jobs_dict[job_title] = [job_info]
+            except:
+                continue
         print("DONE!\n")
         await browser.close()
 
@@ -86,6 +89,7 @@ async def scrape2(sub_page, id_num):
     job_title_locator = sub_page.locator('#main-content .content h1')
     # used as key for returned dictionary
     job_title = await job_title_locator.inner_text()
+    # job_title = await job_title_locator.inner_html()
     # job_title = job_title.replace('/', '&')
     job_title = re.sub('[\[\].$#/]', ' ', job_title)
     # job_title = re.sub(']|[', ' ', job_title)
@@ -161,7 +165,7 @@ async def dictify(parsed_list, dict):
             curr_key = parsed_list[i]
         else:
             if parsed_list[i].startswith("$"):
-                parsed_list[i] = re.sub('\$|/hr|[A-Z]|,', '', parsed_list[i])
+                parsed_list[i] = re.sub('\.|\$|/hr|[A-Z]|,', '', parsed_list[i])
                 parsed_list[i] = list(
                     map(lambda x: float(x), parsed_list[i].split('-')))
                 # for j in range(len(parsed_list[i])):

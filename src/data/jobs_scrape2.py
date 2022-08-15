@@ -37,6 +37,7 @@ async def main():
     '''
     creates a "jobs_scrape.json" file with web-scraped info from NU on-campus jobs website
     '''
+    print('Done')
     with open("./src/data/jobs_scrape.json", "w") as outfile:
         json.dump(await scrape1(), outfile)
 
@@ -71,12 +72,15 @@ async def scrape1():
             link = await nth.locator('a').get_attribute("href")
             # links_list.append({"text": text, "link": page.url + link})
             sub_page = await context.new_page()
-            await sub_page.goto(page.url + link)
-            # await sub_page.wait_for_timeout(1000)
-            job_title, job_info = await scrape2(sub_page, id_num=id)
-            job_info['CATEGORY'] = category
+            try: 
+                await sub_page.goto(page.url + link)
+                # await sub_page.wait_for_timeout(1000)
+                job_title, job_info = await scrape2(sub_page, id_num=id)
+                job_info['CATEGORY'] = category
 
-            jobs_dict[id] = job_info
+                jobs_dict[id] = job_info
+            except:
+                continue
 
             # if id in jobs_dict.keys():
             #     jobs_dict[id] = jobs_dict[job_title] + [job_info]
@@ -180,7 +184,7 @@ async def dictify(parsed_list, dict):
             curr_key = parsed_list[i]
         else:
             if parsed_list[i].startswith("$"):
-                parsed_list[i] = re.sub('\$|/hr|[A-Z]|,', '', parsed_list[i])
+                parsed_list[i] = re.sub('\.|\$|/hr|[A-Z]|,', '', parsed_list[i])
                 parsed_list[i] = list(
                     map(lambda x: float(x), parsed_list[i].split('-')))
                 # for j in range(len(parsed_list[i])):
